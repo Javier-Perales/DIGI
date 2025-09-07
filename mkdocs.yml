@@ -1,0 +1,82 @@
+# --- Configuración del Sitio ---
+site_name: DIGI - Digitalización
+site_author: Javier Perales
+site_url: https://javier-perales.github.io/DIGI/ 
+site_description: Apuntes y materiales para la asignatura Digitalización.
+use_directory_urls: false
+# --- Configuración del Tema (Material for MkDocs) ---
+theme:
+  name: material
+  language: es
+  icon:
+    logo: material/alpha-d-box-outline # O el que prefieras de https://materialdesignicons.com/
+  palette:
+    # Modo claro
+    - scheme: default
+      primary: green
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+    # Modo oscuro
+    - scheme: slate
+      primary: green
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+  features:
+  #  - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - content.code.annotate
+
+extra_css:
+  - stylesheets/extra.css
+# --- Navegación del Sitio (Aquí organizarás tus temas) ---
+nav:
+  - ¡Comienza la Aventura 🚀!': 'index.md'
+  - 'SA 1. Laboratorio Técnico 🛠️':
+    - 'Introducción al Proyecto': 'sa01/intro.md'
+    - 'Sprint 1: Análisis y Diagnóstico - ¿Qué necesita nuestro cliente?': 'sa01/sprint01.md'
+    - 'Sprint 2: Diseño y Presupuesto - El Arte de Elegir Componentes': 'sa01/sprint02.md'
+    - 'Sprint 3: Montaje Virtual y Diseño de Red - ¡Manos a la Obra!': 'sa01/sprint03.md'
+    - 'Sprint 4: Guía de Sostenibilidad y Presentación Técnica': 'sa01/sprint04.md'
+  - 'SA 2. Factoría de Soluciones 💻': []
+  #  - 'Introducción al Proyecto': 'sa02/intro.md'
+  #  - 'Sprint 5: Ideación - Detectando Necesidades en el IES': 'sa02/sprint05.md'
+  #  - 'Sprint 6: Diseño y Prototipado - Del Boceto a la Interfaz': 'sa02/sprint06.md'
+  #  - 'Sprint 7: Desarrollo (I) - Construyendo el Esqueleto de la App': 'sa02/sprint07.md'
+  #  - 'Sprint 8: Desarrollo (II) - Dando Vida a las Funciones': 'sa02/sprint08.md'
+  #  - 'Sprint 9: Desarrollo (III) - Integrando Contenidos Multimedia': 'sa02/sprint09.md'
+  #  - 'Sprint 10: Testeo y Depuración - ¡A la Caza de Bugs!': 'sa02/sprint10.md'
+  #  - 'Sprint 11: Launch Day - Presentamos Nuestra Solución': 'sa02/sprint11.md'
+  - 'SA 3. Agencia de Comunicación 👤': []
+  #  - 'Introducción al Proyecto': 'sa03/intro.md'
+  #  - 'Sprint 12: Auditoría Digital - Nuestra Huella y los Peligros de la Red': 'sa03/sprint12.md'
+  #  - 'Sprint 13: Creando el Kit de Supervivencia Digital': 'sa03/sprint13.md'
+  #  - 'Sprint 14: Plan de Activismo - Diseñando Nuestra Campaña': 'sa03/sprint14.md'
+  #  - 'Sprint 15: Lanzamiento y Debate - Nuestra Voz Cuenta': 'sa03/sprint15.md'
+  #- 'Sprint 16: Proyecto Final - Mi Portfolio Digital 🏆': 'sprint16/final.md'
+  
+
+plugins:
+  - search
+
+
+# --- Extensiones de Markdown ---
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - attr_list
+  - md_in_html
+  - pymdownx.tabbed:
+      alternate_style: true
+  - footnotes

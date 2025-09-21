@@ -1,0 +1,1116 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Al finalizar el sprint, el alumnado será capaz de identificar los componentes clave de un sistema informático, comprender su función y tomar decisiones básicas sobre su elección en función de las necesidades de un usuario y un presupuesto determinado.">
+      
+      
+        <meta name="author" content="Javier Perales">
+      
+      
+        <link rel="canonical" href="https://javier-perales.github.io/DIGI/sa01/sprint01.html">
+      
+      
+        <link rel="prev" href="intro.html">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
+    
+    
+      
+        <title>El Arte de elegir componentes - DIGI - Digitalización</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sesion-1-el-cuerpo-y-el-alma-hw-y-sw" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../index.html" title="DIGI - Digitalización" class="md-header__button md-logo" aria-label="DIGI - Digitalización" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7h4a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H9zm2 2v6h2V9zM3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm2 0v14h14V5z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DIGI - Digitalización
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              El Arte de elegir componentes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="indigo"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="DIGI - Digitalización" class="md-nav__button md-logo" aria-label="DIGI - Digitalización" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7h4a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H9zm2 2v6h2V9zM3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm2 0v14h14V5z"/></svg>
+
+    </a>
+    DIGI - Digitalización
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ¡Comienza la Aventura 🚀!'
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    SA 1. Agente Digitalizador 🛠️
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            SA 1. Agente Digitalizador 🛠️
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="intro.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sprint 0: Introducción al Proyecto
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Sprint 1: El arte de elegir componentes
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="sprint01.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sprint 1: El arte de elegir componentes
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sesion-1-el-cuerpo-y-el-alma-hw-y-sw" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sesión 1: "El Cuerpo y el Alma" (HW y SW)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sesion-2-el-cerebro-de-la-operacion-el-procesador-o-cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sesión 2: "El Cerebro de la Operación" (El Procesador o CPU)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 2: &#34;El Cerebro de la Operación&#34; (El Procesador o CPU)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-arquitectura-del-procesador" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Arquitectura del Procesador
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1 Arquitectura del Procesador">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arquitectura-x86" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arquitectura x86
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arquitectura-arm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arquitectura ARM:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diferencias-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diferencias clave:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-frecuencia-de-reloj-clock-speed" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Frecuencia de reloj (Clock Speed)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-numero-de-nucleos-cores" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Número de núcleos (Cores)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-numero-de-hilos-threads" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 Número de Hilos (Threads)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-memoria-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 Memoria Caché
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-socket" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6 Socket
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sesion-3-procesadores-2a-parte" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sesión 3: "Procesadores - 2ª Parte"
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sprint02.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sprint 2: ¿Qué necesita nuestro cliente? - Diseño y Presupuesto
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sprint03.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sprint 3: Montaje Virtual y Diseño de Red - ¡Manos a la Obra!
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sprint04.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sprint 4: Guía de Sostenibilidad y Presentación Técnica
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SA 2. Factoría de Soluciones 💻
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SA 3. Agencia de Comunicación 👤
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sesion-1-el-cuerpo-y-el-alma-hw-y-sw" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sesión 1: "El Cuerpo y el Alma" (HW y SW)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sesion-2-el-cerebro-de-la-operacion-el-procesador-o-cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sesión 2: "El Cerebro de la Operación" (El Procesador o CPU)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 2: &#34;El Cerebro de la Operación&#34; (El Procesador o CPU)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-arquitectura-del-procesador" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Arquitectura del Procesador
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1 Arquitectura del Procesador">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arquitectura-x86" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arquitectura x86
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arquitectura-arm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arquitectura ARM:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diferencias-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diferencias clave:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-frecuencia-de-reloj-clock-speed" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Frecuencia de reloj (Clock Speed)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-numero-de-nucleos-cores" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Número de núcleos (Cores)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-numero-de-hilos-threads" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 Número de Hilos (Threads)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-memoria-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 Memoria Caché
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-socket" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6 Socket
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sesion-3-procesadores-2a-parte" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sesión 3: "Procesadores - 2ª Parte"
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Sprint 1: El arte de elegir componentes</h1>
+
+<!--
+Metodología: Learning by Doing (Aprender Haciendo) 🧠. Cada sesión se estructura en:
+
+    Píldora Teórica (10-15 min): Una explicación muy directa, visual y llena de analogías para presentar el concepto del día.
+
+    Actividad Práctica (30-35 min): Una misión o reto, individual o en equipo, para aplicar y asimilar lo aprendido de forma inmediata.
+
+    Puesta en Común (5 min): Breve repaso de las conclusiones de la actividad.
+
+
+-->
+
+<p>Durante las próximas dos semanas, nos convertiremos en consultores tecnológicos de primer nivel. Una de las responsabilidades más importantes de un <strong>agente digitalizador</strong> es saber escuchar, analizar y, sobre todo, asesorar eficazmente a sus clientes. Cada cliente es un mundo, con sus propias características y necesidades específicas a cubrir.</p>
+<p>¿Creéis que un <strong>diseñador gráfico</strong> que trabaja con vídeo en 4K y modelado 3D necesita el mismo ordenador que una <strong>peluquería</strong> que solo quiere gestionar sus citas, llevar la contabilidad y manejar sus redes sociales? La respuesta es un rotundo no. Y ahí es donde entráis vosotros.</p>
+<p>Elegir los componentes de un sistema informático no es solo una tarea técnica; es un arte. Es el arte de equilibrar <strong>rendimiento, presupuesto y sostenibilidad</strong> para ofrecer la solución perfecta a cada problema.</p>
+<h2 id="sesion-1-el-cuerpo-y-el-alma-hw-y-sw">Sesión 1: "El Cuerpo y el Alma" (HW y SW)</h2>
+<p>Hoy empezamos nuestro viaje para convertirnos en Agentes Digitalizadores. Y la primera pregunta es: ¿qué tienen en común un robot, un móvil y una persona?</p>
+<p><img alt="Robot, móvil y persona" class="center" src="assets/robot-movil-humano.png" width="80%" /></p>
+<p>Todos tienen un cuerpo y una 'mente' que le dice a ese cuerpo qué hacer. En informática, a eso lo llamamos <strong>Sistema Informático</strong>.</p>
+<p><strong>HARDWARE (El Cuerpo 🦾)</strong> 
+- El hardware son todas las partes físicas que podemos tocar. En una persona, son los huesos, los músculos, el cerebro, el corazón... En un ordenador, es la pantalla, el teclado, el ratón y, lo más importante, todo lo que hay dentro de la caja.</p>
+<ul>
+<li>El hardware es fuerte, pero por sí solo es inútil. Un cuerpo sin vida no hace nada.</li>
+</ul>
+<p><strong>SOFTWARE (El Alma y los Pensamientos 🧠)</strong></p>
+<ul>
+<li>El software en una persona son sus pensamientos, su personalidad, su lenguaje... En un ordenador, es el sistema operativo (como Windows o MacOS) y todos los programas que usáis (Word, Chrome, juegos...).</li>
+<li>El software da vida al hardware. Sin software, un ordenador es solo una caja de metal y plástico.</li>
+</ul>
+<p>Al igual que vuestros pensamientos (sw) le dicen a vuestro cuerpo (hw) qué hacer, del mismo modo, <em>Fortnite</em> (Sw) le dice a la tarjeta gráfica (hw) que dibuje un personaje en la pantalla.</p>
+<div class="admonition question">
+<p class="admonition-title">A103.1(CE1, CMCT2) Explorando el Hardware</p>
+<p><strong>Objetivo</strong>: Familiarizarse con los componentes HW. básicos de un sistema informático y su función.</p>
+<p>Haciendo uso de los siguientes recursos, haz un esquema conceptual de los componentes principales de un ordenador junto con una breve descripción de la función de cada uno:</p>
+<ul>
+<li><a href="https://youtu.be/fcrLFdn-oWE?si=FAh6Q5_u3CqIzZf-">Vídeo: TODOS los COPONENTES y partes del PC en 5 minutos</a></li>
+<li><a href="https://www.pccomponentes.com/guia-componentes-ordenador?srsltid=AfmBOoorQ8yVkuVZYFPv8F1P4kDLDCbKL7zgcPvAt3RAw5-3y-OJxnDM">Artículo: Guía con todos los componentes de un ordenador</a></li>
+</ul>
+<p>Realiza la actividad de forma individual sobre un documento Microsoft Whiteboard de tu identidad digital, nombralo A103_1 seguido de tu nombre, por ejemplo, en mi caso sería "A103_1 Javier Perales"</p>
+<p>Haciendo uso de "Exportar/Alta resolución", exporta el archivo en un documento png y sube la respuesta en la actividad correspondiente de la plataforma <em>Aules</em>.</p>
+</div>
+<hr />
+<h2 id="sesion-2-el-cerebro-de-la-operacion-el-procesador-o-cpu">Sesión 2: "El Cerebro de la Operación" (El Procesador o CPU)</h2>
+<p>Se podría decir que el procesador es el "cerebro" del ordenador 🧠. Es el encargado de ejecutar todas las instrucciones y cálculos necesarios para que el sistema funcione correctamente.</p>
+<p>Imagina el ordenador como una gran fábrica. El procesador será el jefe de producción. Decide qué tareas se deben hacer, da órdenes a los trabajadores (la memoria, la tarjeta gráfica, los periféricos...) y supervisa que el trabaja se haga de manera eficiente y rápida.</p>
+<p>Al analizar un procesador (CPU), hay varios factores clave que debes tener en cuenta para comprender su rendimiento y cómo se adapta a tus necesidades. Aquí te resumo los aspectos más importantes que debes saber:</p>
+<h3 id="21-arquitectura-del-procesador">2.1 Arquitectura del Procesador</h3>
+<p>Se refiere al diseño y estructura interna del procesador. Ojo, no hay que confundirlo con las marcas de los procesadores. Las arquitecturas más comunes son:</p>
+<ul>
+<li><strong>x86</strong> (Intel y AMD) y </li>
+<li><strong>ARM</strong> (desde 2020, <em>Apple</em> ha empezado a utilizar sus propios procesadores basados en ARM, la serie M (M1, M2, ...) aunque tambien se utilizan en dispositivos móviles y servidores).</li>
+</ul>
+<h4 id="arquitectura-x86">Arquitectura x86</h4>
+<ul>
+<li><strong>Diseño CISC</strong> (Complex Instruction Set Computing): Esta arquitectura se caracteriza por un conjunto de instrucciones complejo, lo que permite ejecutar operaciones multifacéticas en una sola instrucción.</li>
+<li>Fabricantes principales: <strong>Intel</strong> y <strong>AMD</strong> son los desarrolladores más destacados de procesadores x86.</li>
+<li>Dispositivos comunes: Predominantemente utilizada en ordenadores de escritorio, portátiles y servidores, donde el rendimiento y la compatibilidad son primordiales.</li>
+</ul>
+<h4 id="arquitectura-arm">Arquitectura ARM:</h4>
+<ul>
+<li><strong>Diseño RISC</strong> (Reduced Instruction Set Computing): Se enfoca en un conjunto de instrucciones más simple y eficiente, optimizando el consumo energético y el rendimiento por vatio.</li>
+<li>Fabricantes principales: ARM Holdings licencia su arquitectura a diversos fabricantes, entre ellos <strong>Qualcomm</strong>, <strong>Apple</strong>, <strong>Samsung</strong> y <strong>NVIDIA</strong>.</li>
+<li>Dispositivos comunes: Ampliamente implementada en dispositivos móviles como smartphones y tabletas, así como en sistemas embebidos y, más recientemente, en algunos portátiles y servidores debido a su eficiencia energética.</li>
+</ul>
+<h4 id="diferencias-clave">Diferencias clave:</h4>
+<ul>
+<li>Eficiencia energética: Los procesadores ARM suelen consumir menos energía, lo que los hace ideales para dispositivos móviles y aplicaciones donde la duración de la batería es crucial.- </li>
+<li>Rendimiento: Los procesadores x86 ofrecen un alto rendimiento y son compatibles con una amplia gama de aplicaciones de escritorio y servidor.- </li>
+<li>Compatibilidad de software: La arquitectura x86 tiene una larga trayectoria en el mercado de PC, lo que garantiza una amplia compatibilidad con software existente. ARM está ganando terreno, especialmente con sistemas operativos y aplicaciones diseñadas específicamente para su arquitectura.</li>
+</ul>
+<h3 id="22-frecuencia-de-reloj-clock-speed">2.2 Frecuencia de reloj (<em>Clock Speed</em>)</h3>
+<p>La <strong>frecuencia de los procesadores se mide en gigahercios (GHz)</strong>, que representan miles de millones de ciclos por segundo. Un procesador de 3.5 GHz, por ejemplo, ejecuta 3,500 millones de ciclos cada segundo.</p>
+<p>Cuanto mayor es la frecuencia en GHz, más rápido puede ejecutar operaciones, aunque esto no siempre implica mayor rendimiento general (depende de otros factores como la arquitectura del procesador y la eficiencia energética).</p>
+<h3 id="23-numero-de-nucleos-cores">2.3 Número de núcleos (<em>Cores</em>)</h3>
+<p>Un núcleo es una unidad de procesamiento independiente dentro del procesador. <strong>Cuantos más núcleos tenga un procesador, más tareas puede manejar simultáneamente</strong>. Procesadores con múltiples núcleos (dual-core, quad-core, octa-core, etc.) son mejores para multitarea y aplicaciones que requieren procesamiento paralelo.</p>
+<div class="admonition warning">
+<p class="admonition-title">Importante</p>
+<p>Con el lanzamiento de los procesadores Intel Core de 12ª Generación (<em>Alder Lake</em>), Intel dio un gran paso adelante en esta filosofía, presentando dos tipos diferentes de núcleos dentro de un mismo procesador.</p>
+<ul>
+<li>Los <strong>P-Cores</strong> se llaman así porque la P viene de Performance, rendimiento en inglés.</li>
+<li>Los <strong>E-Cores</strong> se llaman así porque la E viene de Efficiency, eficiencia en inglés.</li>
+<li><strong>LP E-Core</strong>, que sería un núcleo de ultra-bajo consumo. </li>
+</ul>
+<p>Actualmente, Intel está en la 14ª generación de procesadores, conocida como <strong>Raptor Lake Refresh</strong>, con hasta 24 nucleos (8 P-Cores + 16 E-Cores).</p>
+<p>Intel también tiene otras líneas de procesadores, como los procesadores Intel Xeon para servidores y estaciones de trabajo.  Sin embargo, la línea <strong>Intel Core</strong> es la más conocida y utilizada en ordenadores de sobremesa y portátiles.</p>
+</div>
+<h3 id="24-numero-de-hilos-threads">2.4 Número de Hilos (Threads)</h3>
+<p>Los hilos son las unidades más pequeñas que gestionan las tareas dentro de un núcleo. Algunos procesadores tienen tecnología de multithreading (como <em>Hyper-Threading de Intel</em>) que permite a un núcleo manejar más de un hilo simultáneamente.</p>
+<p>Más hilos permiten un mejor rendimiento en aplicaciones multitarea y tareas que se benefician del paralelismo, como edición de video o renderizado 3D.</p>
+<p><strong>Solo los P-core tienen hilos</strong></p>
+<h3 id="25-memoria-cache">2.5 Memoria Caché</h3>
+<p>La caché es una memoria muy rápida integrada en la CPU para almacenar datos e instrucciones de uso frecuente.
+Tipos:
+- L1: Pequeña y ultrarrápida, cercana a los núcleos.
+- L2: Un poco más grande y más lenta que L1.
+- L3: Compartida entre todos los núcleos, más lenta pero de mayor capacidad.</p>
+<p>La caché ayuda a acelerar el acceso a datos y reduce la necesidad de ir a la RAM para obtener información, mejorando el rendimiento general.</p>
+<p><img alt="Niveles de memoria cache" class="center" src="assets/memoriacache.jpg" /></p>
+<h3 id="26-socket">2.6 Socket</h3>
+<p>El <em>Socket</em> o zócalo es la interfaz física que conecta el procesador a la placa base. Cada tipo de procesador requiere un socket específico, por lo que es crucial asegurarse de que el procesador y la placa base sean compatibles.</p>
+<p><strong>Recurso:</strong> <a href="https://youtu.be/W7XsGOx_RPA?si=5Xt-dVJngZZ-5yBZ&amp;t=166">Socket 2'40''- 5'</a></p>
+<div class="admonition question">
+<p class="admonition-title">A103.2(CE1, CMCT2) Procesadores</p>
+<p>Completa el diagrama conceptual de la actividad anterior con las características más relevantes que se han presentado durante esta sesión.</p>
+<p>Exporta el diagrama en png, al igual que has hecho en la actividad anterior y adjunta el documento en la tarea de <em>Aules</em>. Recuerda nombrar el archivo como A103_2 seguido de tu nombre y apellido.</p>
+</div>
+<hr />
+<h2 id="sesion-3-procesadores-2a-parte">Sesión 3: "Procesadores - 2ª Parte"</h2>
+<div class="admonition question">
+<p class="admonition-title">A103.3(CE1, CMCT2) Características de procesadores</p>
+<table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>AMD Ryzen 7 5800H</th>
+<th>Intel Core i9-13980HX</th>
+<th>AMD Ryzen 9 7945HX</th>
+<th>Intel Core i9-13900K</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Frecuencia reloj base</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Frecuencia turbo</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Número de núcleos</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Hilos</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Caché</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Socket</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Recursos:</p>
+<ul>
+<li>Significado de las partes de los nombres de los procesadores de Intel Core y AMD <a href="https://primetechsupport.com/es/blogs/gaming-pc-repairs/decoding-cpu-names-understanding-amd-intels-nomenclature">Prime Tech Support</a></li>
+<li><a href="https://www.intel.com/content/www/us/en/processors/processor-numbers.html">Entendiendo los nombres de Intel</a></li>
+<li><a href="https://medium.com/@meCreator/01-understanding-amd-processor-names-3a89261dcd99">Entendiendo los nombres de AMD</a></li>
+<li>Características de procesadores <a href="https://www.intel.la/content/www/xl/es/products/details/processors.html">Intel</a></li>
+<li>Características de procesadores <a href="https://www.amd.com/es/products/specifications/processors.html">AMD</a></li>
+<li>Espectificaciones procesadores <a href="https://www.techpowerup.com/cpu-specs/">Intel+AMD</a></li>
+</ul>
+<p>Responde la actividad en un documento Word, nombralo como A103.3 seguido por tu nombre y apellido, y adjuntala a la tarea correspondiente de <em>Aules</em>.</p>
+</div>
+<hr />
+<!--
+## Sesión 3: "La Mesa de Trabajo" (Memoria RAM)
+
+    Píldora Teórica:
+
+        Analogía: La memoria RAM es la mesa de trabajo del chef 📏.
+
+        Función: No guarda nada permanentemente. Cuanto más grande es la mesa (más GB de RAM), más programas y archivos puedes tener abiertos y usar a la vez sin que todo se vuelva lento y caótico.
+
+        Capacidad: Se explica qué significan 8GB, 16GB, 32GB en términos prácticos (navegador con muchas pestañas, un juego, un programa de edición...).
+
+    Actividad: "¿Cuánta RAM Necesitas?"
+
+        Objetivo: Entender el impacto real de la cantidad de RAM.
+
+        Desarrollo: Se les proporciona una tabla con diferentes programas y juegos (Google Chrome, Photoshop, Valorant, Word...). Su misión es investigar en internet los "requisitos recomendados de RAM" para cada uno. Luego, deben responder a preguntas como:
+
+            "Si un cliente quiere editar fotos y tener 20 pestañas de Chrome abiertas, ¿le recomendarías 8GB o 16GB? ¿Por qué?"
+
+            "Diseña una configuración de RAM para la abuela que solo usa el correo y para el primo que quiere ser youtuber".
+
+## Sesión 4: "El Gran Almacén" (Disco Duro: SSD vs. HDD)
+
+    Píldora Teórica:
+
+        Analogía: El disco duro es el almacén o la biblioteca 📚 donde se guarda todo a largo plazo (fotos, juegos, documentos).
+
+        Tipos:
+
+            HDD (Disco Duro Mecánico): Como una biblioteca con un bibliotecario que busca los libros a mano. Más lento, pero más barato y con más capacidad.
+
+            SSD (Unidad de Estado Sólido): Como una biblioteca digital con un buscador instantáneo. Muchísimo más rápido, pero más caro.
+
+    Actividad: "Duelo de Velocidad y Presupuesto" ⏱️💰
+
+        Objetivo: Comprender la diferencia de rendimiento y coste entre SSD y HDD.
+
+        Desarrollo:
+
+            Visualización (5 min): Se les muestra un vídeo corto de YouTube comparando el tiempo de arranque de Windows y la carga de un juego en un HDD vs. un SSD. El impacto visual es inmediato.
+
+            Reto (25 min): Con un presupuesto fijo de 100€, deben buscar en una tienda online la mejor configuración de almacenamiento para:
+
+                Opción A (Máxima Capacidad): Conseguir el mayor espacio posible.
+
+                Opción B (Máxima Velocidad): Conseguir la mayor velocidad posible.
+
+                Opción C (Configuración Híbrida): Un SSD pequeño para el Sistema Operativo y un HDD para guardar archivos.
+
+## Sesión 5: "El Artista y el Esqueleto" (Tarjeta Gráfica y Placa Base)
+
+    Píldora Teórica:
+
+        Tarjeta Gráfica (GPU): Es el artista 🎨 del equipo. Se encarga de dibujar todo lo que ves en el monitor. Esencial para videojuegos y diseño. Si no haces nada de eso, con una básica es suficiente.
+
+        Placa Base: Es el esqueleto y sistema nervioso que conecta TODOS los componentes entre sí. Su principal característica es la compatibilidad: no todas las placas sirven para todos los procesadores.
+
+    Actividad: "El Puzzle de la Compatibilidad" 🧩
+
+        Objetivo: Entender el concepto de compatibilidad.
+
+        Desarrollo: Se utiliza una herramienta online como PCPartPicker.
+
+            Se les da un procesador que eligieron en la sesión 2 (ej. un AMD Ryzen 5).
+
+            Su misión en la web es seleccionar ese procesador y ver cómo la propia herramienta filtra y muestra solo las placas base compatibles.
+
+            Después, añaden la memoria RAM y el disco duro de las sesiones anteriores. El objetivo es que vean cómo se van "encajando las piezas" del puzzle digital.
+
+## Sesión 6: "Consolidación" (Repaso y Ensamblaje Virtual)
+
+    Píldora Teórica:
+
+        Repaso rápido de todos los componentes y su función.
+
+        Se introduce la diferencia entre PC y Mac (hardware más cerrado vs. abierto) y los Sistemas Operativos (Windows, MacOS, Linux) como el "director de orquesta" de todo el sistema.
+
+    Actividad: "Mi Primer Presupuesto de Agente Digitalizador" 🚀
+
+        Objetivo: Aplicar todo lo aprendido para crear un presupuesto completo.
+
+        Desarrollo: Esta es la actividad final que los prepara para la Situación de Aprendizaje. Se les asigna un perfil de cliente completo:
+
+            "Cliente Final: Un fotógrafo aficionado que necesita un ordenador para editar sus fotos en Lightroom, que sea rápido al abrir programas y con bastante espacio para guardar sus archivos. Presupuesto máximo para la torre: 700€."
+
+        Usando la herramienta online, deben configurar un PC completo (CPU, RAM, Disco, Gráfica, Placa Base, etc.) que cumpla los requisitos y no se pase del presupuesto. Deben hacer una captura de pantalla del resultado final.
+
+-->
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "content.code.annotate"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>

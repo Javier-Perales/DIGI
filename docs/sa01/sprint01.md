@@ -149,6 +149,7 @@ El *Socket* o zócalo es la interfaz física que conecta el procesador a la plac
 
 !!! question "A103.3(CE1, CMCT2) Características de procesadores"
 
+    Completa la siguiente tabla comparando las características clave de los procesadores indicados. Investiga y rellena cada campo utilizando los recursos proporcionados. Presta especial atención a la frecuencia base y turbo, el número de núcleos e hilos, la memoria caché y el tipo de socket de cada modelo.
 
     | Característica             | AMD Ryzen 7 5800H | Intel Core i9-13980HX | AMD Ryzen 9 7945HX | Intel Core i9-13900K |
     |----------------------------|-------------------|-----------------------|--------------------|----------------------|
@@ -159,17 +160,16 @@ El *Socket* o zócalo es la interfaz física que conecta el procesador a la plac
     | **Caché**                  |                   |                       |                    |                      |
     | **Socket**                 |                   |                       |                    |                      |
 
-    
-    Recursos:
+    **Recursos de apoyo:**
 
-    - Significado de las partes de los nombres de los procesadores de Intel Core y AMD [Prime Tech Support](https://primetechsupport.com/es/blogs/gaming-pc-repairs/decoding-cpu-names-understanding-amd-intels-nomenclature)
+    - [Significado de los nombres de procesadores Intel y AMD (Prime Tech Support)](https://primetechsupport.com/es/blogs/gaming-pc-repairs/decoding-cpu-names-understanding-amd-intels-nomenclature)
     - [Entendiendo los nombres de Intel](https://www.intel.com/content/www/us/en/processors/processor-numbers.html)
     - [Entendiendo los nombres de AMD](https://medium.com/@meCreator/01-understanding-amd-processor-names-3a89261dcd99)
-    - Características de procesadores [Intel](https://www.intel.la/content/www/xl/es/products/details/processors.html)
-    - Características de procesadores [AMD](https://www.amd.com/es/products/specifications/processors.html)
-    - Espectificaciones procesadores [Intel+AMD](https://www.techpowerup.com/cpu-specs/)
+    - [Características de procesadores Intel](https://www.intel.la/content/www/xl/es/products/details/processors.html)
+    - [Características de procesadores AMD](https://www.amd.com/es/products/specifications/processors.html)
+    - [Especificaciones de procesadores Intel y AMD (TechPowerUp)](https://www.techpowerup.com/cpu-specs/)
 
-    Responde la actividad en un documento Word, nombralo como A103.3 seguido por tu nombre y apellido, y adjuntala a la tarea correspondiente de *Aules*.
+    Responde a la actividad en un documento Word, nómbralo como A103.3 seguido de tu nombre y apellido, y adjúntalo a la tarea correspondiente en *Aules*.
 
 ---
 

@@ -7,7 +7,7 @@ La Unión Europea, por medio de los fondos [NextGenerationEU](https://next-gener
 
 El objetivo principal de estas ayudas es digitalizar pymes, microempresas y autónomos de todos los sectores de actividad en España. Las ayudas se conceden a través de bonos digitales que las empresas pueden usar para contratar soluciones tecnológicas y servicios de digitalización.
 
-En este primer proyecto, os convertiréis en una **pequeña consultoría técnica** especializada en la innovación digital de pequeñas y mediana empresass (PYMES) y participáis como **agentes digitalizadores** en el programa de ayudas del Kit Digital. 
+En este primer proyecto, os convertiréis en una **pequeña consultoría técnica** especializada en la innovación digital de pequeñas y mediana empresass (PYMES) y participáis como **agentes digitalizadores** en el programa de ayudas del Kit Digital.
 
 Vuestro objetivo, por tanto, es diseñar una transformación digital completa para un cliente que ha recibido la ayuda del Kit Digital. El proyecto se divide en tres grandes fases:
 
@@ -18,7 +18,6 @@ Vuestro objetivo, por tanto, es diseñar una transformación digital completa pa
 Cada equipo irá elaborando su portfolio digital con su solución completa, que incluirá documentación técnica, diagramas de red, presupuestos y la guía de sostenibilidad. Al final del proyecto, cada equipo presentará su solución al resto de la clase y al profesor, defendiendo sus decisiones y demostrando cómo su propuesta satisface las necesidades del cliente de manera efectiva y eficiente.
 
 Las herramientas que utilizaréis para documentar y presentar vuestro trabajo serán principalmente de la suite de Microsoft 365, centrandonos especialmente en **OneDrive** para el almacenamiento y gestión de archivos, **OneNote** para la toma de notas y organización del proyecto, **Swey** para la presentación final, entre otras.
-
 
 !!! question "A101(CE5,CPSAA) - Constitución de la Consultora - Agente Digitalizador"
   
@@ -33,9 +32,8 @@ Las herramientas que utilizaréis para documentar y presentar vuestro trabajo se
     Obviamente, como agentes digitalizadores, deberéis utilizar herramientas digitales para facilitar la colaboración y comunicación entre los miembros del equipo.  Dentro de los roles especificados en la constitución de la empresa, el *Director del Proyecto (CEO)* haciendo uso de su identidad digital, deberá crear una carpeta compartida en **OneDrive** para almacenar todos los documentos y archivos relacionados con el proyecto. El nombre de dicha carperta deberá ser el nombre elegido para la consultora. La carpeta deberá compartirse con todos los miembros del equipo, otorgándoles permisos de edición [Ayuda cómo compartir carpetas en OneDrive](https://youtu.be/cODrVa5PitA?si=-xzSdDhZDGzB2XAg)
 
 !!! warning "Aviso: Creación del logotipo de la consultora"
-    Puedes acceder a [Copilot]() con tu identidad digital de Office 365 y pedirle que te genere un logotipo para tu empresa. En la caja del chat solo tienes que escribir algo como:
+    Puedes acceder a [Copilot](https://copilot.microsoft.com) con tu identidad digital de Office 365 y pedirle que te genere un logotipo para tu empresa. En la caja del chat solo tienes que escribir algo como:
       > Crea un logotipo profesional y minimalista para una consultora tecnológica llamada [Nombre Consultora]. El logo debe usar las iniciales 'XX' de forma creativa. Utiliza una paleta de colores con un morado tecnológico y un gris oscuro. El estilo debe ser moderno y limpio."
-
 
 !!! question "A102(CE5, CPSAA) - Creación del Perfil Profesional de la Consultora - Agente Digitalizador"
 
@@ -56,7 +54,7 @@ Las herramientas que utilizaréis para documentar y presentar vuestro trabajo se
       - Misión de la Empresa: El texto principal del documento será vuestra misión (la "Descripción de la Empresa" de la ficha anterior). Cópiala y pégala en el cuerpo del documento.
 
       [Ayuda: Cómo crear documentos de Word basados en plantillas](https://youtu.be/KjKPGMuri7k?si=cqsXfgQgBvTUZQQW)
- 
+
  <!--   1. Formar equipos de trabajo de 3-4 personas.
     1. Elegir un nombre para vuestra consultora digitalizadora.
     2. Crear un equipo en Microsoft Teams con el nombre elegido.

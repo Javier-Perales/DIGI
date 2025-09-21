@@ -40,8 +40,8 @@ nav:
   - ¡Comienza la Aventura 🚀!': 'index.md'
   - 'SA 1. Agente Digitalizador 🛠️':
     - 'Sprint 0: Introducción al Proyecto': 'sa01/intro.md'
-    - 'Sprint 1: Análisis y Diagnóstico - ¿Qué necesita nuestro cliente?': 'sa01/sprint01.md'
-    - 'Sprint 2: Diseño y Presupuesto - El Arte de Elegir Componentes': 'sa01/sprint02.md'
+    - 'Sprint 1: El arte de elegir componentes': 'sa01/sprint01.md'
+    - 'Sprint 2: ¿Qué necesita nuestro cliente? - Diseño y Presupuesto': 'sa01/sprint02.md'
     - 'Sprint 3: Montaje Virtual y Diseño de Red - ¡Manos a la Obra!': 'sa01/sprint03.md'
     - 'Sprint 4: Guía de Sostenibilidad y Presentación Técnica': 'sa01/sprint04.md'
   - 'SA 2. Factoría de Soluciones 💻': []

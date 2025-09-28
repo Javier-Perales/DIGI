@@ -159,6 +159,7 @@ El *Socket* o zócalo es la interfaz física que conecta el procesador a la plac
     | **Hilos**                  |                   |                       |                    |                      |
     | **Caché**                  |                   |                       |                    |                      |
     | **Socket**                 |                   |                       |                    |                      |
+    | **Precio**                 |                   |                       |                    |                      |
 
     **Recursos de apoyo:**
 

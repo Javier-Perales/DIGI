@@ -172,6 +172,8 @@ El *Socket* o zócalo es la interfaz física que conecta el procesador a la plac
 
     Responde a la actividad en un documento Word, nómbralo como A103.3 seguido de tu nombre y apellido, y adjúntalo a la tarea correspondiente en *Aules*.
 
+---
+
 ## Sesión 4: Memoria RAM
 
 La memoria RAM (**Random Access Memory**) es una memoria de acceso rápido y volátil que almacena temporalmente datos e instrucciones que el procesador necesita mientras se ejecutan programas o aplicaciones.
@@ -250,7 +252,7 @@ El factor de forma de la RAM DDR se refiere a su tamaño físico y disposición 
 
 En 2025 la mayoría de los ordenadores nuevos vendrán con **DDR5**, pero aún hay muchos equipos con **DDR4**. Las generaciones anteriores (DDR3, DDR2 y DDR) ya están obsoletas y no se usan en equipos nuevos.
 
-## 4.4 Marcas de memoria RAM
+### 4.4 Marcas de memoria RAM
 
 Solo tres empresas fabrican la mayoría de los chips de memoria: **Samsung, Micron y SK Hynix**. Las marcas como Corsair o G.Skill compran estos chips, los clasifican según su calidad (binning), y los montan en sus propias placas con disipadores de calor y luces RGB. Por tanto, más alla de la marca, fíjate en estas especificaciones:
 
@@ -270,7 +272,7 @@ Algunas de las marcas más reconocidas y confiables en el mercado de memoria RAM
     Completa el diagrama conceptual de la actividad A103.2 añadiendo las características más relevantes de la memoria RAM que se han presentado durante esta sesión.
 
         
-## 4.5 Problemas al no tener suficiente RAM
+### 4.5 Problemas al no tener suficiente RAM
 
 Cuando un ordenador se queda sin RAM, comienza a utilizar el espacio del disco duro como si fuera RAM, lo que es mucho más lento. Esto puede hacer que el sistema operativo y las aplicaciones se vuelvan extremadamente lentos o incluso se bloqueen. Los problemas más comunes son:
 

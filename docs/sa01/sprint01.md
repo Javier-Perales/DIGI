@@ -159,7 +159,7 @@ El *Socket* o zócalo es la interfaz física que conecta el procesador a la plac
     | **Hilos**                  |                   |                       |                    |                      |
     | **Caché**                  |                   |                       |                    |                      |
     | **Socket**                 |                   |                       |                    |                      |
-    | **Precio**                 |                   |                       |                    |                      |
+    | **PC escritorio o portátil**                 |                   |                       |                    |                      |
 
     **Recursos de apoyo:**
 
@@ -172,28 +172,190 @@ El *Socket* o zócalo es la interfaz física que conecta el procesador a la plac
 
     Responde a la actividad en un documento Word, nómbralo como A103.3 seguido de tu nombre y apellido, y adjúntalo a la tarea correspondiente en *Aules*.
 
----
+## Sesión 4: Memoria RAM
+
+La memoria RAM (**Random Access Memory**) es una memoria de acceso rápido y volátil que almacena temporalmente datos e instrucciones que el procesador necesita mientras se ejecutan programas o aplicaciones.
+
+### 4.1 Magnitudes de memoria
+
+La capacidad de almacenamiento de las memorias se mide en bytes (B) y sus múltiplos:
+
+- 1 byte (B) = 8 bits (la unidad más pequeña de información en informática, que puede ser 0 o 1)
+- 1 Kilobyte (KB) = 1.024 bytes
+- 1 Megabyte (MB) = 1.024 KB = 1.048.576 bytes
+- 1 Gigabyte (GB) = 1.024 MB = 1.073.741.824 bytes
+- 1 Terabyte (TB) = 1.024 GB = 1.099.511.627.776 bytes
+- 1 Petabyte (PB) = 1.024 TB = 1.125.899.906.842.624 bytes
+- 1 Exabyte (EB) = 1.024 PB = 1.152.921.504.606.846.976 bytes
+
+**La capacidad de la memoria RAM en un ordenador se mide en gigabytes (GB). Cuanta más memoria RAM tenga un ordenador, más datos e instrucciones podrá almacenar temporalmente, lo que mejora el rendimiento y la capacidad multitarea del sistema.**
+
+!!! question "A103.4 (parte1/3) (CE1, CMCT2) Conversión de magnitudes de memoria"
+
+    **Antes de empezar, repasemos las dos reglas claves:**
+
+    - Para convertir una unidad mayor a menor (por ejemplo de GB a MB), multiplica por 1.024.
+    - Para convertir una unidad menor a mayor (por ejemplo de MB a GB), divide por 1.024.
+
+    ```
+    ▲  (Dividir ÷ 1024)
+    TB
+    GB
+    MB
+    KB
+    Bytes
+    ▼  (Multiplicar x 1024)
+    ```
+    **Calentamiento:**
+    1. De grande a pequeño:
+        - 4 TB = ? MB
+        - 2 MB = ? KB
+        - 20 GB = ? KB
+    2. De pequeño a grande:
+        - 3.072 MB = ? GB
+        - 5.120 KB = ? MB
+        - 8.388.608 KB = ? GB
+  
+    **Actividad principal:**
+
+    1. El fotografo. Tiene una tarjeta de memoria de 16GB. Si cada foto que hace en alta calidad ocupa 8MB, ¿cuántas fotos puede almacenar en la tarjeta antes de llenarla?
+    2. El cinefilo. Si quieres descargar una película que ocupa 3.072 MB y tu pendrive tiene una capacidad de 4GB ¿tienes espacio suficiente para guardarla? ¿Cuánto espacia te sobraría o faltaría (en MB)?
+    3. El músico. Tienes 100 canciones en formato MP3 y cada una ocupa 5.120 KB. ¿puedes guardarlas todas en un CD que tiene capacidad de 700 MB?
+    **Recursos de apoyo:**
+
+    - [Conversor de unidades de memoria (UnitConverters)](https://www.unitconverters.net/data-storage-converter.html)
+  
+    **Responde a la actividad en un documento Word, nómbralo como A103_4_RAM seguido de tu nombre y apellido, y adjúntalo a la tarea correspondiente en *Aules*.**
+
+
+    
+### 4.2 Factor de forma
+
+El factor de forma de la RAM DDR se refiere a su tamaño físico y disposición de pines, siendo comúnmente **DIMM** (Dual In-line Memory Module) para ordenadores de sobremesa y **SO-DIMM** (Small Outline DIMM) para portátiles y dispositivos compactos.
+
+![Memoria RAM DIMM](./assets/formato-memoria-ram-dimm-sodimm.webp){.center width=60%}
+
+
+### 4.3 Tipos de RAM
+
+| Tipo de RAM | Año de lanzamiento | Velocidad de reloj | Transferencia de Datos (MT/s) | Velocidad de Transferéncia | Voltatge | Pins |
+|-------------|--------------------|--------------------|-------------------------------|----------------------------|----------|------|
+| DDR         | 2000               | 100 - 200          | 200 - 400                     | 1,6 - 3,2 GB/s             | 2,5V     | 184  |
+| DDR2        | 2003               | 266 - 533          | 533 - 1066                    | 4,2 - 8,5 GB/s             | 1,8V     | 240  |
+| DDR3        | 2007               | 533 - 1066         | 1066 - 2133                   | 8,5 - 17 GB/s              | 1,5V     | 240  |
+| DDR4        | 2014               | 1066 - 1600        | 2133 - 3200                   | 17 - 25,6 GB/s             | 1,2V     | 288  |
+| DDR5        | 2020               | 2400 - 4200        | 4800 - 8400                   | 38,4 - 67,2 GB/s           | 1,1V     | 288  |
+
+*MT/s= Millones de transferencias por segundo. Unatransferencia es un bloque de 64bits.*
+
+En 2025 la mayoría de los ordenadores nuevos vendrán con **DDR5**, pero aún hay muchos equipos con **DDR4**. Las generaciones anteriores (DDR3, DDR2 y DDR) ya están obsoletas y no se usan en equipos nuevos.
+
+## 4.4 Marcas de memoria RAM
+
+Solo tres empresas fabrican la mayoría de los chips de memoria: **Samsung, Micron y SK Hynix**. Las marcas como Corsair o G.Skill compran estos chips, los clasifican según su calidad (binning), y los montan en sus propias placas con disipadores de calor y luces RGB. Por tanto, más alla de la marca, fíjate en estas especificaciones:
+
+1. Tipo de memoria (DDR4, DDR5...)
+1. Velocidad (3200MHz, 3600MHz...)
+1. Capacidad (8GB, 16GB, 32GB...)
+1. Latencia (CL16, CL18...) - Cuanto menor sea la latencia, mejor. La latencia es el tiempo que tarda la RAM en responder a una solicitud del procesador.
+
+Algunas de las marcas más reconocidas y confiables en el mercado de memoria RAM son:
+
+- [Corsair](https://www.corsair.com/es/es/c/memory)
+- [Kingston](https://www.kingston.com/es/memory)
+- [Crucial](https://www.crucial.com/memory)
+
+!!! question "A103.5 (CE1, CMCT2) Diagrama conceptual de memoria RAM"
+
+    Completa el diagrama conceptual de la actividad A103.2 añadiendo las características más relevantes de la memoria RAM que se han presentado durante esta sesión.
+
+        
+## 4.5 Problemas al no tener suficiente RAM
+
+Cuando un ordenador se queda sin RAM, comienza a utilizar el espacio del disco duro como si fuera RAM, lo que es mucho más lento. Esto puede hacer que el sistema operativo y las aplicaciones se vuelvan extremadamente lentos o incluso se bloqueen. Los problemas más comunes son:
+
+- **Lentitud extrema del sistema**
+- **Imposibilidad de realizar multiples tareas**: Cambiar de una aplicación a otra se convierte en una espera interminable.
+- **Bloqueos y fallos de aplicaciones**: Estás trabajando en un documento o jugando y, de repente, la imagen se congela o la aplicación se cierra inesperadamente.
+- **Pantallazos azules**: en casos extremos, la falta de RAM no solo afecta a las aplicaciones, sino a todo el sistema operativo, provocando reinicios inesperados o pantallazos azules de la muerte.
+
+!!! note "Análisis uso de memoria"
+
+    En Windows, puedes ver el uso de la memoria RAM en el "Administrador de Tareas" (Ctrl + Shift + Esc) en la pestaña "Rendimiento". Aquí puedes ver cuánta RAM está siendo utilizada y cuánta está disponible.
+
+    En Linux, puedes usar el comando `free -h` en la terminal para ver el uso de la memoria RAM.
+
+    Observa cómo cambia el uso de la memoria cuando abres diferentes aplicaciones o pestañas del navegador. 
+
+
+
+!!! question "A103.6(CE1, CMCT2) ¿Cuánta RAM necesito?"
+
+    Vuestra misión será investigar la cantidad de memoria RAM que necesitan los programas y juegos más populares para poder dar recomendaciones personalizadas y fundamentadas a diferentes perfiles de usuario.
+
+    Responde las cuestiones en un documento Word, nómbralo como A103_4 seguido de tu nombre y apellido, y adjúntalo a la tarea correspondiente en *Aules* en formato pdf.
+
+    **Fase 1: Investigación.** Completa la siguiente tabla.
+
+    **Instrucción clave:** Para la búsqueda, usad términos como: *"requisitos recomendados RAM [nombre del programa]"*
+
+    | Programa / Juego              | Uso Principal      | Requisitos Mínimos de RAM | Requisitos Recomendados de RAM |
+    |-------------------------------|-------------------|---------------------------|--------------------------------|
+    | **Sistema Operativo**         |                   |                           |                                |
+    | Windows 11                    | Básico            | 4 GB                      | 8 GB                           |
+    | **Navegador**                 |                   |                           |                                |
+    | Google Chrome (20 pestañas)   | Navegación        |                            |                           |
+    | **Ofimática**                 |                   |                      |                           |
+    | Microsoft Word                | Textos            |                      |                           |
+    | **Diseño Gráfico**            |                   |                      |                           |
+    | Adobe Photoshop               | Edición fotos     |                      |                           |
+    | GIMP (alternativa gratuita)   | Edición fotos     |                      |                           |
+    | **Videojuegos**               |                   |                      |                           |
+    | Valorant                      | E-sports          |                      |                           |
+    | Cyberpunk 2077                | AAA               |                      |                           |
+    | **Edición de Vídeo / Streaming** |                 |                      |                           |
+    | DaVinci Resolve               | Edición vídeo     |                      |                           |
+    | OBS Studio                    | Streaming         |                      |                           |
+
+    **Fase 2: El Análisis y los Perfiles**
+    
+    Una vez completada la tabla, cada equipo recibirá un perfil de usuario para analizar. Vuestra tarea es calcular sus necesidades y decidir qué cantidad de RAM recomendar.
+
+    === "Perfil 1. La Abuela Conectada 👵"
+
+        Tareas: Usa el ordenador para leer el correo electrónico (en el navegador), ver recetas en YouTube (2-3 pestañas abiertas) y hacer videollamadas con la familia.
+        
+        Pregunta clave: ¿Son suficientes 4GB? ¿Le recomendarías 8GB para que el ordenador le dure más tiempo sin ir lento? Justifica tu respuesta.
+
+    === "Perfil 2. El Estudiante Multitarea 📚"
+
+        Tareas: Necesita tener Word abierto para tomar apuntes, 15-20 pestañas de Chrome para investigar, Spotify de fondo y a veces edita imágenes sencillas con GIMP para sus trabajos.
+
+        Pregunta clave: Está dudando entre 8GB y 16GB. ¿Cuál le recomiendas? Explica qué problemas podría tener si elige la opción más barata (8GB).
+
+    === "Perfil 3.El Primo YouTuber 🎮"
+
+        Tareas: Juega a Valorant mientras graba la pantalla con OBS Studio. Después, edita esos vídeos en DaVinci Resolve. Mientras renderiza un vídeo, suele tener Discord y varias pestañas de Chrome abiertas.
+
+        Pregunta clave: ¿Le bastaría con 16GB o debería ir directamente a por 32GB? Argumenta tu decisión basándote en la suma de RAM que necesitarían sus programas funcionando a la vez.
 
 <!--
-## Sesión 3: "La Mesa de Trabajo" (Memoria RAM)
+## Sesión 5. Almacenamiento secundario (Disco Duro: SSD vs. HDD)
 
-    Píldora Teórica:
+l almacenamiento secundario se refiere a los dispositivos de almacenamiento de datos que se utilizan para guardar información de forma permanente, incluso cuando el ordenador está apagado. Los dispositivos de almacenamiento secundario más comunes son los discos duros (**HDD**), las unidades de estado sólido (**SSD**).
 
-        Analogía: La memoria RAM es la mesa de trabajo del chef 📏.
+En el siguiente enlace dispones de un [video](https://www.youtube.com/watch?v=V7qg1WGSdvc) que muestra la evolución de los dispositivos de almacenamiento.
 
-        Función: No guarda nada permanentemente. Cuanto más grande es la mesa (más GB de RAM), más programas y archivos puedes tener abiertos y usar a la vez sin que todo se vuelva lento y caótico.
 
-        Capacidad: Se explica qué significan 8GB, 16GB, 32GB en términos prácticos (navegador con muchas pestañas, un juego, un programa de edición...).
 
-    Actividad: "¿Cuánta RAM Necesitas?"
+**Recurso:**
+- [Capacidad de almacenamiento](https://youtu.be/W7XsGOx_RPA?si=TuVU2b_M7Nc2zB2M&t=653)
 
-        Objetivo: Entender el impacto real de la cantidad de RAM.
 
-        Desarrollo: Se les proporciona una tabla con diferentes programas y juegos (Google Chrome, Photoshop, Valorant, Word...). Su misión es investigar en internet los "requisitos recomendados de RAM" para cada uno. Luego, deben responder a preguntas como:
 
-            "Si un cliente quiere editar fotos y tener 20 pestañas de Chrome abiertas, ¿le recomendarías 8GB o 16GB? ¿Por qué?"
+---
 
-            "Diseña una configuración de RAM para la abuela que solo usa el correo y para el primo que quiere ser youtuber".
+
 
 ## Sesión 4: "El Gran Almacén" (Disco Duro: SSD vs. HDD)
 

@@ -41,10 +41,10 @@ nav:
   - 'SA 1. Agente Digitalizador 🛠️':
     - 'Sprint 0: Introducción al Proyecto': 'sa01/intro.md'
     - 'Sprint 1: El arte de elegir componentes': 'sa01/sprint01.md'
-    - 'Sprint 2: ¿Qué necesita nuestro cliente? - Diseño y Presupuesto': 'sa01/sprint02.md'
-    - 'Sprint 3: Montaje Virtual y Diseño de Red - ¡Manos a la Obra!': 'sa01/sprint03.md'
-    - 'Sprint 4: Guía de Sostenibilidad y Presentación Técnica': 'sa01/sprint04.md'
-  - 'SA 2. Factoría de Soluciones 💻': []
+   # - 'Sprint 2: ¿Qué necesita nuestro cliente? - Diseño y Presupuesto': 'sa01/sprint02.md'
+   # - 'Sprint 3: Montaje Virtual y Diseño de Red - ¡Manos a la Obra!': 'sa01/sprint03.md'
+  #  - 'Sprint 4: Guía de Sostenibilidad y Presentación Técnica': 'sa01/sprint04.md'
+  #- 'SA 2. Factoría de Soluciones 💻': []
   #  - 'Introducción al Proyecto': 'sa02/intro.md'
   #  - 'Sprint 5: Ideación - Detectando Necesidades en el IES': 'sa02/sprint05.md'
   #  - 'Sprint 6: Diseño y Prototipado - Del Boceto a la Interfaz': 'sa02/sprint06.md'
@@ -53,7 +53,7 @@ nav:
   #  - 'Sprint 9: Desarrollo (III) - Integrando Contenidos Multimedia': 'sa02/sprint09.md'
   #  - 'Sprint 10: Testeo y Depuración - ¡A la Caza de Bugs!': 'sa02/sprint10.md'
   #  - 'Sprint 11: Launch Day - Presentamos Nuestra Solución': 'sa02/sprint11.md'
-  - 'SA 3. Agencia de Comunicación 👤': []
+  #- 'SA 3. Agencia de Comunicación 👤': []
   #  - 'Introducción al Proyecto': 'sa03/intro.md'
   #  - 'Sprint 12: Auditoría Digital - Nuestra Huella y los Peligros de la Red': 'sa03/sprint12.md'
   #  - 'Sprint 13: Creando el Kit de Supervivencia Digital': 'sa03/sprint13.md'

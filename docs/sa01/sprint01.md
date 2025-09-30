@@ -12,7 +12,6 @@ Metodología: Learning by Doing (Aprender Haciendo) 🧠. Cada sesión se estruc
 
     Puesta en Común (5 min): Breve repaso de las conclusiones de la actividad.
 
-
 -->
 
 Durante las próximas dos semanas, nos convertiremos en consultores tecnológicos de primer nivel. Una de las responsabilidades más importantes de un **agente digitalizador** es saber escuchar, analizar y, sobre todo, asesorar eficazmente a sus clientes. Cada cliente es un mundo, con sus propias características y necesidades específicas a cubrir.
@@ -29,7 +28,8 @@ Hoy empezamos nuestro viaje para convertirnos en Agentes Digitalizadores. Y la p
 
 Todos tienen un cuerpo y una 'mente' que le dice a ese cuerpo qué hacer. En informática, a eso lo llamamos **Sistema Informático**.
 
-**HARDWARE (El Cuerpo 🦾)** 
+**HARDWARE (El Cuerpo 🦾)**
+
 - El hardware son todas las partes físicas que podemos tocar. En una persona, son los huesos, los músculos, el cerebro, el corazón... En un ordenador, es la pantalla, el teclado, el ratón y, lo más importante, todo lo que hay dentro de la caja.
 
 - El hardware es fuerte, pero por sí solo es inútil. Un cuerpo sin vida no hace nada.
@@ -68,7 +68,7 @@ Al analizar un procesador (CPU), hay varios factores clave que debes tener en cu
 
 Se refiere al diseño y estructura interna del procesador. Ojo, no hay que confundirlo con las marcas de los procesadores. Las arquitecturas más comunes son:
 
-- **x86** (Intel y AMD) y 
+- **x86** (Intel y AMD) y
 - **ARM** (desde 2020, *Apple* ha empezado a utilizar sus propios procesadores basados en ARM, la serie M (M1, M2, ...) aunque tambien se utilizan en dispositivos móviles y servidores).
 
 #### Arquitectura x86
@@ -85,8 +85,8 @@ Se refiere al diseño y estructura interna del procesador. Ojo, no hay que confu
 
 #### Diferencias clave:
 
-- Eficiencia energética: Los procesadores ARM suelen consumir menos energía, lo que los hace ideales para dispositivos móviles y aplicaciones donde la duración de la batería es crucial.- 
-- Rendimiento: Los procesadores x86 ofrecen un alto rendimiento y son compatibles con una amplia gama de aplicaciones de escritorio y servidor.- 
+- Eficiencia energética: Los procesadores ARM suelen consumir menos energía, lo que los hace ideales para dispositivos móviles y aplicaciones donde la duración de la batería es crucial.
+- Rendimiento: Los procesadores x86 ofrecen un alto rendimiento y son compatibles con una amplia gama de aplicaciones de escritorio y servidor.
 - Compatibilidad de software: La arquitectura x86 tiene una larga trayectoria en el mercado de PC, lo que garantiza una amplia compatibilidad con software existente. ARM está ganando terreno, especialmente con sistemas operativos y aplicaciones diseñadas específicamente para su arquitectura.
 
 ### 2.2 Frecuencia de reloj (*Clock Speed*)
@@ -174,7 +174,7 @@ El *Socket* o zócalo es la interfaz física que conecta el procesador a la plac
 
 ---
 
-## Sesión 4: Memoria RAM
+## Sesión 4,5: Memoria RAM
 
 La memoria RAM (**Random Access Memory**) es una memoria de acceso rápido y volátil que almacena temporalmente datos e instrucciones que el procesador necesita mientras se ejecutan programas o aplicaciones.
 
@@ -209,20 +209,24 @@ La capacidad de almacenamiento de las memorias se mide en bytes (B) y sus múlti
     ▼  (Multiplicar x 1024)
     ```
     **Calentamiento:**
+
     1. De grande a pequeño:
+   
         - 4 TB = ? MB
         - 2 MB = ? KB
         - 20 GB = ? KB
+  
     2. De pequeño a grande:
+   
         - 3.072 MB = ? GB
         - 5.120 KB = ? MB
         - 8.388.608 KB = ? GB
   
     **Actividad principal:**
 
-    1. El fotografo. Tiene una tarjeta de memoria de 16GB. Si cada foto que hace en alta calidad ocupa 8MB, ¿cuántas fotos puede almacenar en la tarjeta antes de llenarla?
-    2. El cinefilo. Si quieres descargar una película que ocupa 3.072 MB y tu pendrive tiene una capacidad de 4GB ¿tienes espacio suficiente para guardarla? ¿Cuánto espacia te sobraría o faltaría (en MB)?
-    3. El músico. Tienes 100 canciones en formato MP3 y cada una ocupa 5.120 KB. ¿puedes guardarlas todas en un CD que tiene capacidad de 700 MB?
+    3. El fotografo. Tiene una tarjeta de memoria de 16GB. Si cada foto que hace en alta calidad ocupa 8MB, ¿cuántas fotos puede almacenar en la tarjeta antes de llenarla?
+    4. El cinefilo. Si quieres descargar una película que ocupa 3.072 MB y tu pendrive tiene una capacidad de 4GB ¿tienes espacio suficiente para guardarla? ¿Cuánto espacia te sobraría o faltaría (en MB)?
+    5. El músico. Tienes 100 canciones en formato MP3 y cada una ocupa 5.120 KB. ¿puedes guardarlas todas en un CD que tiene capacidad de 700 MB?
     **Recursos de apoyo:**
 
     - [Conversor de unidades de memoria (UnitConverters)](https://www.unitconverters.net/data-storage-converter.html)
@@ -290,7 +294,6 @@ Cuando un ordenador se queda sin RAM, comienza a utilizar el espacio del disco d
     Observa cómo cambia el uso de la memoria cuando abres diferentes aplicaciones o pestañas del navegador. 
 
 
-
 !!! question "A103.6(CE1, CMCT2) ¿Cuánta RAM necesito?"
 
     Vuestra misión será investigar la cantidad de memoria RAM que necesitan los programas y juegos más populares para poder dar recomendaciones personalizadas y fundamentadas a diferentes perfiles de usuario.
@@ -348,17 +351,10 @@ l almacenamiento secundario se refiere a los dispositivos de almacenamiento de d
 
 En el siguiente enlace dispones de un [video](https://www.youtube.com/watch?v=V7qg1WGSdvc) que muestra la evolución de los dispositivos de almacenamiento.
 
-
-
 **Recurso:**
 - [Capacidad de almacenamiento](https://youtu.be/W7XsGOx_RPA?si=TuVU2b_M7Nc2zB2M&t=653)
 
-
-
 ---
-
-
-
 ## Sesión 4: "El Gran Almacén" (Disco Duro: SSD vs. HDD)
 
     Píldora Teórica:

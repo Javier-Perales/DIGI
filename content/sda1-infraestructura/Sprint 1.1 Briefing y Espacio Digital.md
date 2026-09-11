@@ -7,7 +7,7 @@ tags:
   - epa
   - m365
 criterios_evaluacion: CE 2.1, CE 2.2, CE 5.1, CE 5.2
-entregable: Archivo pdf y enlace repositorio EPA por Aules
+entregable: Archivo pdf y enlace repositorio EPA
 ---
 
 > [!abstract] El Desafío

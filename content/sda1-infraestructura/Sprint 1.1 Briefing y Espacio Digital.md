@@ -2,7 +2,6 @@
 title: "Sprint 1.1: Briefing y Espación digital"
 sda: "SdA 1: Oficina digital y conexión segura"
 tags:
-  - digi
   - identidad-digital
   - epa
   - m365
@@ -19,20 +18,21 @@ entregable: Archivo pdf y enlace repositorio EPA
 > **¿Qué se entrega?:** Informe **pdf** de 2 páginas con inventario inicial, debilidades detectadas y objetivos de digitalización.
 > 
 > **Lista de comprobación (Checklist de éxito):**
-> - [ ] Cumple con la función principal descrita en el reto.
-> - [ ] El código está ordenado y sin bloques redundantes o huérfanos.
-> - [ ] Utiliza recursos con licencias libres o autoría propia.
-> - [ ] La entrega en Aules incluye los nombres de ambos integrantes del equipo.
+> - [ ] Formato, Identidad y Maquetación Ejecutiva. 
+> - [ ] Toma de requerimientos y entrevista al cliente.
+> - [ ] Diagnóstico e inventario inicial
+> - [ ] Matriz de debilidades y puntos críticos
+> - [ ] Objetivos de digitalización
 ---
 
 > [!question] **A102 (CE2+CE5) Estructura del Repositorio EPA del Equipo**
 > **¿Qué se entrega?:** Enlace al espacio compartido en la nube con árbol de carpetas estandarizado (01_Briefing, 02_Hardware, 03_Redes, 04_Software, 05_Seguridad, 06_Ergonomia) y políticas de permisos asignadas.
 > 
 > **Lista de comprobación (Checklist de éxito):**
-> - [ ] Cumple con la función principal descrita en el reto.
-> - [ ] El código está ordenado y sin bloques redundantes o huérfanos.
-> - [ ] Utiliza recursos con licencias libres o autoría propia.
-> - [ ] La entrega en Aules incluye los nombres de ambos integrantes del equipo.
+> - [ ] Dentro de la carpeta raíz, se han creado **las 6 carpetas temáticas** con la numeración y nombres requeridos
+> - [ ] Dentro de la carpeta `01_Briefing`, ya se encuentra depositada la _Ficha Técnica de Requerimientos del Cliente (PDF)_
+> - [ ] Utiliza buenas prácticas de nomenclatura digital. 
+>
 
 ---
 # Sesión 1: Onboarding - Identidad digital
@@ -56,6 +56,7 @@ La **identidad digital** es el rastro, la presencia y las interacciones que una 
 Conjunto de herramientas, servicios y conexiones que empleamos para gestionar nuestro propio aprendizaje.
 
 ![[recursos/DIGI EPA.excalidraw.light.svg]]
+
 ### El Ecosistema Microsoft 365 como núcleo del EPA
 
 | Herramienta                      | Rol dentro del EPA                    | Aplicación concreta en la materia                                                                                                              |

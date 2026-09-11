@@ -1,6 +1,8 @@
 ---
-title: "Digitalización 4º ESO - DigiLab Solutions"
-tags: [digi, 4eso, digitalizacion]
+title: Digitalización 4º ESO - DigiLab Solutions
+tags:
+  - digi
+  - 4eso
 ---
 En la materia de Digitalización, el trabajo práctico se articula mediante un entorno de simulación profesional: la consultora técnica **DigiLab Solutions**. A lo largo del curso académico, asumiréis el rol de **Agentes de Transformación Digital Junior**, asumiendo la responsabilidad técnica de modernizar los procesos, infraestructuras y canales de comunicación de un comercio o servicio de proximidad
 

@@ -72,10 +72,10 @@ Conjunto de herramientas, servicios y conexiones que empleamos para gestionar nu
 
 ## 3. Guía de Estilo Corporativo y Producción Documental
 
->[!danger]- [CASO A] Detecta el desastre
+>[!danger]- CASO A. Detecta el desastre
 > ¿Por qué el cliente descarta el presupuesto en 1 segundo?
 > 
-> **De:** `alvarito_elputoamo2010@gmail.com`
+>**De:** `alvarito_elputoamo2010@gmail.com`
 >**Para:** `gerencia@veterinariasanjuan.es`
 >**Asunto:**
 >**Adjuntos:** `IMG_3492.jpg` (foto torcida y borrosa de la pantalla del monitor), `presupuesto_definitivo_v2_este_si.xlsx`
@@ -87,7 +87,7 @@ Conjunto de herramientas, servicios y conexiones que empleamos para gestionar nu
 >
 >alvaro
 
->[!example]- [CASO B] Estándar profesional de DigiLab Solutions
+>[!example]- CASO B. Estándar profesional de DigiLab Solutions
 >**De:** `a.gonzalez@alu.edu.gva.es`
 >
 >**Para:** `gerencia@veterinariasanjuan.es`
@@ -120,6 +120,7 @@ Conjunto de herramientas, servicios y conexiones que empleamos para gestionar nu
 >DigiLab Solutions | IES Cap de l'Horta
 >
 >Contacto: `a.gonzalez@alu.edu.gva.es`
+
 
 > [!example] Taller práctico
 > - **Paso 1: Inicio de sesión**

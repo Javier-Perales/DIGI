@@ -28,14 +28,7 @@ entregable: Requerimientos del cliente y enlace repositorio EPA
 > - [ ] Objetivos de digitalización
 ---
 
-> [!question] **A102 (CE2+CE5) Estructura del Repositorio EPA del Equipo**
-> **¿Qué se entrega?:** Enlace al espacio compartido en la nube con árbol de carpetas estandarizado (01_Briefing, 02_Hardware, 03_Redes, 04_Software, 05_Seguridad, 06_Ergonomia) y políticas de permisos asignadas.
-> 
-> **Lista de comprobación (Checklist de éxito):**
-> - [ ] Dentro de la carpeta raíz, se han creado **las 6 carpetas temáticas** con la numeración y nombres requeridos
-> - [ ] Dentro de la carpeta `01_Briefing`, ya se encuentra depositada la _Ficha Técnica de Requerimientos del Cliente (PDF)_
-> - [ ] Utiliza buenas prácticas de nomenclatura digital. 
->
+
 -->
 ---
 # 1. Onboarding - Identidad digital
@@ -130,16 +123,38 @@ Conjunto de herramientas, servicios y conexiones que empleamos para gestionar nu
 >  - **Paso 3: Outlook**. Redacta un email formal para el docente confirmando la activación correcta de la identidad digital y la configuración de la carpeta raíz de DigiLab en OneDrive.
 > 
 
+> [!question] Actividad - A101 (CE2+CE5) Estructura del Repositorio EPA del Equipo
+> Crea y organiza una estructura de carpetas para el proyecto **DigiLab** siguiendo exactamente las indicaciones que se detallan a continuación.
+> 
+> **1. Crear árbol de carpetas**
+> Dentro de la carpeta principal `DIGI4_DigiLab_[PrimerApellido]_[Nombre]`, crea las siguientes subcarpetas:
+> -- `01_Briefing`
+> -- `02_Hardware`
+> -- `03_Redes`
+> -- `04_Software`
+> -- `05_Seguridad`
+> -- `06_Ergonomia`
+>Respeta **exactamente** los nombres, números, guiones y orden indicados.
+>
+>**2. Comparte la carpeta**
+>Comparte la carpeta principal mediante un enlace que permita al docente acceder a ells con **permiso de solo lectura**
+>
+>**3. Envía un correo electrónico**
+>Envía un correo electrónico formal al docente que incluya:
+>- Una breve explicación indicando que la estructura de carpetas ha sido creada.
+>- Una **imagen o captura de pantalla** en la que se pueda comprobar el contenido de la carpeta principal y sus seis subcarpetas.
+>- Un **enlace de acceso a la carpeta principal con permisos de solo lectura**.
+> 
+> **¿Qué se entrega en Aules?** 
+> Exporta el correo electrónico a formato pdf y envíalo por Aules
+> 
+
 ### 3.1 Estándar de Producciones Documentales
 - **Jerarquía tipográfica real:**
-        - Máximo **dos familias tipográficas** por documento (una para títulos y otra para texto corrido, tipografías legibles como Arial, Roboto o Calibri; vetar fuentes decorativas tipo Comic Sans).
-        
+    - Máximo **dos familias tipográficas** por documento (una para títulos y otra para texto corrido, tipografías legibles como Arial, Roboto o Calibri; vetar fuentes decorativas tipo Comic Sans).
     - Emplear estilos predefinidos (Título 1, Título 2, Título 3) para facilitar la accesibilidad y el índice automático, en vez de aumentar el tamaño de fuente manualmente.
-        
 - **Legibilidad y espaciado:** Texto con interlineado a 1.15 o 1.25 y separación entre párrafos (evitar bloques macizos de texto sin aire).
-    
 - **Tratamiento de imágenes y tablas:** Tablas con encabezado diferenciado y bordes limpios; imágenes alineadas, con proporción de aspecto bloqueada (sin deformaciones) y texto alternativo descriptivo.
-    
 - **Formato de entrega final:** Salvo que se requiera editar o colaborar, **todo entregable final se exporta y entrega en formato PDF** para garantizar que no se altere la maquetación entre diferentes sistemas (LliureX / Windows).
 
 <!--

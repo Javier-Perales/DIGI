@@ -114,6 +114,7 @@ Conjunto de herramientas, servicios y conexiones que empleamos para gestionar nu
 >
 >Contacto: `a.gonzalez@alu.edu.gva.es`
 
+**Recurso:** [Saludos y despedidas en los correos electrónicos académicos y profesionales](https://riunet.upv.es/entities/publication/b6d3e9be-ec6b-424d-8a4d-14c4e11ee304)
 
 > [!example] Taller práctico
 > - **Paso 1: Inicio de sesión**
@@ -123,7 +124,7 @@ Conjunto de herramientas, servicios y conexiones que empleamos para gestionar nu
 >  - **Paso 3: Outlook**. Redacta un email formal para el docente confirmando la activación correcta de la identidad digital y la configuración de la carpeta raíz de DigiLab en OneDrive.
 > 
 
-> [!question] Actividad - A101 (CE2+CE5) Estructura del Repositorio EPA del Equipo
+> [!task] Actividad - A101 (CE2+CE5) Estructura del Repositorio EPA del Equipo
 > Crea y organiza una estructura de carpetas para el proyecto **DigiLab** siguiendo exactamente las indicaciones que se detallan a continuación.
 > 
 > **1. Crear árbol de carpetas**
@@ -154,32 +155,49 @@ Conjunto de herramientas, servicios y conexiones que empleamos para gestionar nu
     - Máximo **dos familias tipográficas** por documento (una para títulos y otra para texto corrido, tipografías legibles como Arial, Roboto o Calibri; vetar fuentes decorativas tipo Comic Sans).
     - Emplear estilos predefinidos (Título 1, Título 2, Título 3) para facilitar la accesibilidad y el índice automático, en vez de aumentar el tamaño de fuente manualmente.
 - **Legibilidad y espaciado:** Texto con interlineado a 1.15 o 1.25 y separación entre párrafos (evitar bloques macizos de texto sin aire).
-- **Tratamiento de imágenes y tablas:** Tablas con encabezado diferenciado y bordes limpios; imágenes alineadas, con proporción de aspecto bloqueada (sin deformaciones) y texto alternativo descriptivo.
+- **Tratamiento de imágenes y tablas:** Tablas con encabezado diferenciado y bordes limpios; imágenes alineadas, con proporción de aspecto bloqueada (sin deformaciones).
 - **Formato de entrega final:** Salvo que se requiera editar o colaborar, **todo entregable final se exporta y entrega en formato PDF** para garantizar que no se altere la maquetación entre diferentes sistemas (LliureX / Windows).
 
-<!--
-# Sesión 2: 
-- [ ] Montaje de la estructura básica del código o hardware.
-- [ ] Primer hito funcional de la misión.
+## 4. Briefing y Toma de Requerimientos.
 
-# Sesión 3: 
-- [ ] Integración de mecánicas avanzadas, condiciones o sensores.
-- [ ] Pruebas intermedias de funcionamiento.
+Como consultor junio debes obtener mediante una entrevista técnica estructurada con el/la gerente de una empresa, la información clave sobre el equipamiento, la red, las rutinas de seguridad y los procesos diarios del negocio, para registrar sus debilidades técnicas y definir los objetivos prioritarios de la transformación digital.
 
-# Sesión 4: 
-- [ ] Integración de mecánicas avanzadas, condiciones o sensores.
-- [ ] Pruebas intermedias de funcionamiento.
+## 4.1 Preparación de la entrevista.
+
+>[!task] Preparación de la entrevista
+> La entrevista debe ayudaros a conocer, al menos:
+>
+> - A qué se dedica el negocio y qué servicios o productos ofrece.
+> - Cuántas personas trabajan en él y cómo utilizan la tecnología.
+> - Qué ordenadores, dispositivos y periféricos utilizan actualmente.
+> - Cómo se conectan a Internet y si disponen de red Wi-Fi o cableada.
+> - Qué programas o aplicaciones utilizan habitualmente.
+> - Cómo almacenan y comparten sus documentos.
+> - Si realizan copias de seguridad.
+> - Qué problemas tecnológicos tienen actualmente.
+> - Qué aspectos les gustaría mejorar.
+> - Qué presupuesto o limitaciones pueden tener.
+> - Qué información consideran especialmente importante o confidencial.
+>   
+>Preparad un documento breve denominado `Preguntas_Entrevista_Cliente` y guardarlo en `01_Briefing`
+>
+>No es necesario escribir un cuestionario muy largo. Debéis seleccionar preguntas útiles que os permitan mantener una conversación natural con el cliente.
+>
+>**Importante:** no intentéis decidir todavía qué ordenador, programa o solución concreta necesita el cliente. En esta primera fase vuestro trabajo consiste principalmente en **escuchar, preguntar y comprender sus necesidades**.
+>
+>**Respuesta del cliente**
+>	`«Tengo todos los documentos guardados en el ordenador y nunca hago copias.»`
+>**Debilidad detectada**
+>	`Ausencia de un sistema de copias de seguridad.`
+>**Requerimiento**
+> 	`La solución deberá incorporar un sistema periódico de copia de seguridad de la información crítica del negocio.`
+> 	
+>**Debéis entregar:**
+>- `Preguntas_Entrevista_Cliente`
+>- `Informe_Requerimientos_DigiLab.pdf`
+>Guardad también los documentos de trabajo dentro de la carpeta: `01_Briefing`del repositorio de vuestro equipo.
 
 
-# Sesión 5: 
-- [ ] Integración de mecánicas avanzadas, condiciones o sensores.
-- [ ] Pruebas intermedias de funcionamiento.
 
-# Sesión 6: 
-- [ ] Integración de mecánicas avanzadas, condiciones o sensores.
-- [ ] Pruebas intermedias de funcionamiento.
-
--->
----
 
 

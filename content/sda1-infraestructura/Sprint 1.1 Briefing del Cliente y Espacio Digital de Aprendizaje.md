@@ -194,7 +194,7 @@ Como consultor junio debes obtener mediante una entrevista técnica estructurada
 > 	
 >**Debéis entregar:**
 >- `Preguntas_Entrevista_Cliente`
->- `Informe_Requerimientos_DigiLab.pdf`
+>- `Informe_Requerimientos_DigiLab.pdf` [[recursos/Plantilla_DigiLab_Briefing_Simplificada.docx|Plantilla_DigiLab_Briefing]]
 >Guardad también los documentos de trabajo dentro de la carpeta: `01_Briefing`del repositorio de vuestro equipo.
 
 

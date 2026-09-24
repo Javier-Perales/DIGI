@@ -162,9 +162,8 @@ Conjunto de herramientas, servicios y conexiones que empleamos para gestionar nu
 
 Como consultor junio debes obtener mediante una entrevista técnica estructurada con el/la gerente de una empresa, la información clave sobre el equipamiento, la red, las rutinas de seguridad y los procesos diarios del negocio, para registrar sus debilidades técnicas y definir los objetivos prioritarios de la transformación digital.
 
-## 4.1 Preparación de la entrevista.
 
->[!task] Preparación de la entrevista
+>[!task] Actividad A102(CE2+CE5) Diagnóstico Inicial. Briefing del Cliente.
 > La entrevista debe ayudaros a conocer, al menos:
 >
 > - A qué se dedica el negocio y qué servicios o productos ofrece.

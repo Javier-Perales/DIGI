@@ -10,7 +10,7 @@ En la materia de Digitalización, el trabajo práctico se articula mediante un e
 
 ### 🖥️ Misión 1: Oficina digital y conexión segura
 * **Sprint 1.1:** [[sda1-infraestructura/Sprint 1.1 Briefing del Cliente y Espacio Digital de Aprendizaje|Briefing del Cliente y Espacio Digital de Aprendizaje]]
-* **Sprint 1.2:** Elegir componentes y calcular el presupuesto del PC
+* **Sprint 1.2:** [[sda1-infraestructura/Sprint 1.2 Selección y Presupuesto de un Equipo|Selección y Presupuesto de un Equipo]]
 * **Sprint 1.3:** Diseñar y conectar la red de la oficina
 * **Sprint 1.4:** Instalar el sistema operativo y programas de oficina
 * **Sprint 1.5:** Proteger el equipo y hacer copias de seguridad

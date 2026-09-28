@@ -107,7 +107,7 @@ Conjunto de herramientas, servicios y conexiones que empleamos para gestionar nu
 >  - **Paso 3: Outlook**. Redacta un email formal para el docente confirmando la activación correcta de la identidad digital y la configuración de la carpeta raíz de DigiLab en OneDrive.
 > 
 
->[!task]- Actividad A101 (CE2+CE5) Estructura del Repositorio EPA del Equipo
+>[!exercise]- Actividad A101 (CE2+CE5) Estructura del Repositorio EPA del Equipo
 > Crea y organiza una estructura de carpetas para el proyecto **DigiLab** siguiendo exactamente las indicaciones que se detallan a continuación.
 > **1. Crear árbol de carpetas**
 > Dentro de la carpeta principal `DIGI4_DigiLab_[PrimerApellido]_[Nombre]`, crea las siguientes subcarpetas:
@@ -144,7 +144,7 @@ Conjunto de herramientas, servicios y conexiones que empleamos para gestionar nu
 Como consultor junio debes obtener mediante una entrevista técnica estructurada con el/la gerente de una empresa, la información clave sobre el equipamiento, la red, las rutinas de seguridad y los procesos diarios del negocio, para registrar sus debilidades técnicas y definir los objetivos prioritarios de la transformación digital.
 
 
->[!task]- Actividad A102(CE2+CE5) Diagnóstico Inicial. Briefing del Cliente.
+>[!exercise]- Actividad A102(CE2+CE5) Diagnóstico Inicial. Briefing del Cliente.
 > La entrevista debe ayudaros a conocer, al menos:
 > - A qué se dedica el negocio y qué servicios o productos ofrece.
 > - Cuántas personas trabajan en él y cómo utilizan la tecnología.

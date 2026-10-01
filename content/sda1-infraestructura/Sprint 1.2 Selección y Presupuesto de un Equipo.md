@@ -86,14 +86,14 @@ Dos de las familias de arquitecturas más habituales son **x86** y **ARM**. Dent
 >Los nombres comerciales no siempre reflejan la potencia real de un procesador. Vais a medir la capacidad de cálculo bruto mediante una prueba estandarizada (_benchmark_) y a registrar su coste actual.
 >**Herramienta de rendimiento:** Acceded a **[PassMark CPU Benchmarks](https://www.cpubenchmark.net/cpu-list/)**  y buscad cada modelo en la barra superior para obtener su puntuación **CPU Mark**. 
 >
-|Modelo de CPU|Puntuación CPU Mark|Clasificación por nivel|Precio aproximado sin IVA (€)|Tienda y fecha de consulta|
-|---|---|---|---|---|
-|Ryzen 7 7700|||||
-|Intel Core i3-12100|||||
-|Intel Core i5-13400|||||
-|AMD Ryzen 5 5600G|||||
-|Intel Core i7-14700|||||
-|AMD Ryzen 5 4600G|||||
+>|Modelo de CPU|Puntuación CPU Mark|Clasificación por nivel|Precio aproximado sin IVA (€)|Tienda y fecha de consulta|
+>|---|---|---|---|---|
+>|Ryzen 7 7700|||||
+>|Intel Core i3-12100|||||
+>|Intel Core i5-13400|||||
+>|AMD Ryzen 5 5600G|||||
+>|Intel Core i7-14700|||||
+>|AMD Ryzen 5 4600G|||||
 >**Clasificación por nivel. Asignad el nivel según la siguiente escala.**
 >- **Nivel Bajo (<15000)**: Puesto básico de facturación, caja/TPV y navegación ofimática.
 >- **Nivel Medio(15000 - 28000):** Puesto administrativo multitaréa y gestión simultanea de aplicaciones.
@@ -103,7 +103,7 @@ Dos de las familias de arquitecturas más habituales son **x86** y **ARM**. Dent
 
 
 >[!question] Comparar CPU para recomendar hardware. **FASE 2. Características Técnicas**
->Completa la siguiente tabla utilizando las páginas oficiales de Intel y AMD. **Respeta el modelo exacto indicado:** una letra o un sufijo diferente puede corresponder a otro procesador.
+>Completa la siguiente tabla **respetando el modelo exacto indicado:** una letra o un sufijo diferente puede corresponder a otro procesador.
 >
 >**Herramienta de especificaciones**: [techpowerup.com/cpu-specs](https://techpowerup.com/cpu-specs), localizad cada modelo exacto y completad los siguientes parámetros:
 >- **Socket:** Tipo de zócalo para verificar compatibilidad con la placa base.   
@@ -112,15 +112,15 @@ Dos de las familias de arquitecturas más habituales son **x86** y **ARM**. Dent
 >- **Frecuencia Turbo (Boost Clock):** Velocidad máxima en GHz.
 >- **TDP (Thermal Design Power):** Consumo térmico y energético en Vatios (W).
 >- **Gráficos Integrados (IGP):** Indicad si el chip incluye tarjeta gráfica integrada (**Sí / No**).
-> 
+>
 >|Procesador|Socket compatible|Núcleos / Hilos|Frecuencia Turbo (GHz)|Caché (L1 / L2 / L3)|Consumo TDP (W)|¿Lleva gráficos integrados? (Sí/No)|
-|---|---|---|---|---|---|---|
-|**Intel Core i3-12100**|||||||
-|**AMD Ryzen 5 4600G**|||||||
-|**Intel Core i5-13400**|||||||
-|**AMD Ryzen 5 5600G**|||||||
-|**Intel Core i7-14700**|||||||
-|**AMD Ryzen 7 7700**|||||||
+>|---|---|---|---|---|---|---|
+>|**Intel Core i3-12100**|||||||
+>|**AMD Ryzen 5 4600G**|||||||
+>|**Intel Core i5-13400**|||||||
+>|**AMD Ryzen 5 5600G**|||||||
+>|**Intel Core i7-14700**|||||||
+>|**AMD Ryzen 7 7700**|||||||
 >
 
 

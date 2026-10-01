@@ -94,12 +94,19 @@ Dos de las familias de arquitecturas más habituales son **x86** y **ARM**. Dent
 >|AMD Ryzen 5 5600G|||||
 >|Intel Core i7-14700|||||
 >|AMD Ryzen 5 4600G|||||
+>
 >**Clasificación por nivel. Asignad el nivel según la siguiente escala.**
 >- **Nivel Bajo (<15000)**: Puesto básico de facturación, caja/TPV y navegación ofimática.
 >- **Nivel Medio(15000 - 28000):** Puesto administrativo multitaréa y gestión simultanea de aplicaciones.
 >- **Nivel Alto(>28000):** Puesto de alto rendimiento, edición multimedia pesada o servidor local.
 > 
 >**Precio sin IVA.** Buscad el precio de venta en alguna tienda de informática de referencia [PCComponentes](https://www.pccomponentes.com/categorias/procesadores), [CoolMod](https://www.coolmod.com/componentes-pc-procesadores/)
+
+
+>[!example] El dilema económico
+>El gerente de la empresa os pide directamente que instaléis el **Intel Core i7-14700** porque "quiere que el ordenador no se quede viejo nunca", aunque su  uso diario consistirá en emitir facturas, consultar el correo y gestionar pedidos web.
+>- Observando la tabla anterior: **¿cuánta diferencia de precio y rendimiento hay respecto al i3 o Ryzen 5?**
+>- Como consultores **¿qué le recomendaríais para evitar un gasto desproporcionado?**
 
 
 >[!question] Comparar CPU para recomendar hardware. **FASE 2. Características Técnicas**
@@ -122,7 +129,22 @@ Dos de las familias de arquitecturas más habituales son **x86** y **ARM**. Dent
 >|**Intel Core i7-14700**|||||||
 >|**AMD Ryzen 7 7700**|||||||
 >
+:
 
+- **Socket o zócalo** es la interfaz física que conecta el procesador a la placa base. Cada tipo de procesador requiere un socket específico, por lo que es crucial asegurarse de que el procesador y la placa base sean compatibles.
+- Un **core o núcleo** es una unidad de procesamiento independiente dentro del procesador. Cuantos más núcleos tenga un procesador, más tareas puede manejar simultáneamente.
+- Los **hilos / threads** son las unidades más pequeñas que gestionan las tareas dentro de un núcleo. Más hilos permiten un mejor rendimiento en aplicaciones multitarea y tareas que se benefician del paralelismo, como edición de video o renderizado 3D.
+- La **frecuencia** de los procesadores se mide en gigahercios (GHz), que representan miles de millones de ciclos por segundo. Un procesador de 3.5 GHz, por ejemplo, ejecuta 3,500 millones de ciclos cada segundo.
+- La **memoria caché** es una memoria muy rápida integrada en la CPU para almacenar datos e instrucciones de uso frecuente. Tipos: - L1: Pequeña y ultrarrápida, cercana a los núcleos. - L2: Un poco más grande y más lenta que L1. - L3: Compartida entre todos los núcleos, más lenta pero de mayor capacidad.
+- **TDP (Thermal Design Power)** medida en vatios, indica la cantidad de calor que el procesador disipa bajo carga máxima. Un TDP más alto implica mayor consumo de energía y la necesidad de mejores soluciones de refrigeración.
+- La mayoría de los procesadores modernos incluyen una tarjeta gráfica integrada, que es útil para tareas gráficas básicas sin necesidad de una tarjeta gráfica dedicada.
+
+>[!example] Selección de procesador
+>Antes de recomendar un equipo a nuestro cliente, debemos clasificar el mercado de procesadores según su rendimiento real, coste real y consumo energético.
+>Asigna cada uno de los procesadores anteriores a una de las siguientes categorías:
+>1. **Gama Entrada (Ofimática / TPV):**
+>2. **Gama Media (Multitarea / Estándar):**
+>3. **Gama Alta/Profesiona (Edición / Carga Pesada):**
 
 
 

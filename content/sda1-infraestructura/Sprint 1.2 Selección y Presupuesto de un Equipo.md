@@ -137,7 +137,7 @@ Dos de las familias de arquitecturas más habituales son **x86** y **ARM**. Dent
 - La **frecuencia** de los procesadores se mide en gigahercios (GHz), que representan miles de millones de ciclos por segundo. Un procesador de 3.5 GHz, por ejemplo, ejecuta 3,500 millones de ciclos cada segundo.
 - La **memoria caché** es una memoria muy rápida integrada en la CPU para almacenar datos e instrucciones de uso frecuente. Tipos: - L1: Pequeña y ultrarrápida, cercana a los núcleos. - L2: Un poco más grande y más lenta que L1. - L3: Compartida entre todos los núcleos, más lenta pero de mayor capacidad.
 - **TDP (Thermal Design Power)** medida en vatios, indica la cantidad de calor que el procesador disipa bajo carga máxima. Un TDP más alto implica mayor consumo de energía y la necesidad de mejores soluciones de refrigeración.
-- La mayoría de los procesadores modernos incluyen una tarjeta gráfica integrada, que es útil para tareas gráficas básicas sin necesidad de una tarjeta gráfica dedicada.
+- La mayoría de los procesadores modernos incluyen una **tarjeta gráfica integrada**, que es útil para tareas gráficas básicas sin necesidad de una tarjeta gráfica dedicada.
 
 >[!example] Selección de procesador
 >Antes de recomendar un equipo a nuestro cliente, debemos clasificar el mercado de procesadores según su rendimiento real, coste real y consumo energético.
@@ -146,5 +146,78 @@ Dos de las familias de arquitecturas más habituales son **x86** y **ARM**. Dent
 >2. **Gama Media (Multitarea / Estándar):**
 >3. **Gama Alta/Profesiona (Edición / Carga Pesada):**
 
+#### Comparativa ARM
+En el punto anterior comparamos y clasificamos procesadores de arquitectura x86 de Intel y AMD. En este apartado vamos a evaluar los procesadores ARM de Apple y Qualcom
 
+| Modelo de CPU                | Puntuación CPU Mark | Socket compatible | Núcleos / Hilos | Frecuencia Turbo (GHz) | Caché (L1 / L2 / L3) | Consumo TDP (W) | ¿Lleva gráficos integrados? (Sí/No) |
+| ---------------------------- | ------------------- | ----------------- | --------------- | ---------------------- | -------------------- | --------------- | ----------------------------------- |
+| Apple M3                     | 19.100              | SoC soldado       | 8/8             | 4GHz                   | NP                   | ~20W            | Sí                                  |
+| Snapdragon X Plus X1P 64-100 | 21.400              | SoC soldado       | 10/10           | 3,4GHz                 | 42 MB en total       | ~20W            | Síu                                 |
+
+>[!example] Sostenibilidad. Rendimiento por Vatio
+>- Observad el *CPU Mark* del *Ryzen 5 5600G* y el del *Apple M3* o *Snapdragon X Plus*. Rinden prácticamente los mismo. Ahora mirad la columna de consumo. **¿Por qué un portátil con chip ARM aguanta 15 horas de batería y apenas se calienta, mientras que una torre tradicional necesita disipadores de calor y ventiladores?**
+
+>[!example] La trampa de la reparabilidad
+>En la torre con el *Core i3-12100*, si dentro de 3 años el cliente necesita más potencia o se quema la placa base, cambiamos esa pieza por 80 € y el ordenador sigue funcionando. **Si en el equipo con *Apple M3* o *Snapdragon* falla la memoria RAM o se estropea el chip, ¿qué ocurre?**
+
+>[!example] El veredicto del consultor
+>Vuestro cliente de la tienda local os dice: 'Quiero un equipo para tenerlo fijo en el mostrador cobrando y haciendo pedidos durante 8 años'.
+>**¿Le recomendáis una torre modular x86 (Intel/AMD) o un equipo compacto con chip ARM soldado?** Justificad vuestra respuesta valorando coste inicial, consumo de luz y facilidad de reparación.
+>Partimos de los siguientes supuestos:
+>- Torre en formato Micro-ATX equipada con un procesador Intel i3-12100 o AMD RYzen 5 4600G puede estar sobre los 450€ sin IVA.
+>- Un MiniPC con procesador ARM puede estar sobre los 850€
+>- Tomamos como base que el comercio está abierto 8 horas al día, 300 días al año (2400 horas anuales) y un precio medio de la electricidad de 0,18€KWh.
+
+# 2. RAM
+
+Analogía:
+- **SSD/HDD = armario**  
+- **RAM = mesa de trabajo**  
+- **CPU = persona que está trabajando**
+
+Cuanta más memoria RAM tenga el equipo, más programas y datos podrá mantener disponibles simultáneamente sin necesidad de recurrir continuamente al almacenamiento.
+
+**La memoria RAM almacena temporalmente los programas y datos que el ordenador está utilizando en ese momento. Su contenido se pierde cuando apagamos el equipo.**
+**RAM → temporal**  
+**SSD/HDD → permanente**
+
+**Capacidad → GB (gigabytes)**
+
+Si consultamos en Windows con el Administrador de Tareas (Task Manager) cuánta memoria tiene el equipo, podría salir una pantalla similar a esta.
+![[../recursos/memoria windows.png]]
+En Linux podríamos ejecutar en el terminal el comando `free -h`
+
+>[!example] ¿Qué ocurre cuando falta RAM?
+>Abre el navegador, varias pestañas, LibreOffice y alguna aplicación adicional.
+>Observa cómo aumenta el consumo de memoria. Es posible que el ordenador empiece a ir lento.
+>**Cuando la RAM disponible se aproxima a su límite, el sistema puede empezar a responder más lentamente.**
+
+## 2.1 Características para comparar módulos
+
+| RAM               | Capacidad | Tipo | Velocidad |
+| ----------------- | --------: | ---- | --------: |
+| Kingston Fury     |      8 GB | DDR4 |  3200 MHz |
+| Crucial           |     16 GB | DDR4 |  3200 MHz |
+| Corsair Vengeance |     16 GB | DDR5 |  5600 MHz |
+## 2.2 ¿Cuánta RAM necesita mi cliente?
+
+| Cliente            | Uso                                   | RAM propuesta |
+| ------------------ | ------------------------------------- | ------------: |
+| Administración     | Navegador + Office + correo           |      **8 GB** |
+| Comercio           | Navegador + Office + TPV + multitarea |     **16 GB** |
+| Diseño             | Photoshop/GIMP + edición multimedia   |  **16–32 GB** |
+| Edición vídeo / 3D | Aplicaciones exigentes                |     **32 GB** |
+- **¿Comprarías 64 GB para un ordenador utilizado únicamente para facturación y correo electrónico?**
+- **Más RAM no siempre significa mejor compra. Hay que dimensionarla según las necesidades del cliente.**
+
+>[!question] Análisis de equipos comerciales
+>Una empresa va a adquirir varios ordenadores para diferentes perfiles de usuario.
+> Completa la tabla y guardala en el documento `Análisis RAM.docx` dentro de `02_Hardware`
+>|Enlace|Nombre Comercial|Precio|Procesador|Capacidad RAM|Tipo(DDR4/DDR5)|Tipo Cliente|
+>|---|---|---|---|---|---|---|
+>|[1](https://www.pccomponentes.com/pc-differo-v15-intel-core-i3-12100-8gb-500gb-ssd-nvme-mini-tower)| | | | | |
+>|[2](https://www.pccomponentes.com/pccom-work-amd-ryzen-5-8500g-16gb-1tb-ssd)| | | | | |
+>|[3](https://www.pccomponentes.com/pc-sobremesa-hp-z2-tower-g1i-intel-core-ultra-7-265k-64gb-1tb-ssd-intel-graphics-windows-11-pro-wi-fi-7)| | | | | |
+>|[4](https://www.pccomponentes.com/pccom-work-intel-core-i3-12100-16gb-500gb-ssd-v4)| | | | | |
+>|[5](https://www.pccomponentes.com/pccom-studio-intel-core-i7-14700kf-32gb-2tb-ssd-rtx-5070-ti-v2-windows-11-pro)| | | | | |
 

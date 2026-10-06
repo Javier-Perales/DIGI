@@ -103,7 +103,7 @@ Dos de las familias de arquitecturas más habituales son **x86** y **ARM**. Dent
 >**Precio sin IVA.** Buscad el precio de venta en alguna tienda de informática de referencia [PCComponentes](https://www.pccomponentes.com/categorias/procesadores), [CoolMod](https://www.coolmod.com/componentes-pc-procesadores/)
 
 
->[!example] El dilema económico
+>[!question] El dilema económico
 >El gerente de la empresa os pide directamente que instaléis el **Intel Core i7-14700** porque "quiere que el ordenador no se quede viejo nunca", aunque su  uso diario consistirá en emitir facturas, consultar el correo y gestionar pedidos web.
 >- Observando la tabla anterior: **¿cuánta diferencia de precio y rendimiento hay respecto al i3 o Ryzen 5?**
 >- Como consultores **¿qué le recomendaríais para evitar un gasto desproporcionado?**
@@ -139,9 +139,9 @@ Dos de las familias de arquitecturas más habituales son **x86** y **ARM**. Dent
 - **TDP (Thermal Design Power)** medida en vatios, indica la cantidad de calor que el procesador disipa bajo carga máxima. Un TDP más alto implica mayor consumo de energía y la necesidad de mejores soluciones de refrigeración.
 - La mayoría de los procesadores modernos incluyen una **tarjeta gráfica integrada**, que es útil para tareas gráficas básicas sin necesidad de una tarjeta gráfica dedicada.
 
->[!example] Selección de procesador
+>[!question] Selección de procesador
 >Antes de recomendar un equipo a nuestro cliente, debemos clasificar el mercado de procesadores según su rendimiento real, coste real y consumo energético.
->Asigna cada uno de los procesadores anteriores a una de las siguientes categorías:
+>Asigna cada uno de los procesadores anteriores a una de las siguientes categorías. Razona la respuesta.
 >1. **Gama Entrada (Ofimática / TPV):**
 >2. **Gama Media (Multitarea / Estándar):**
 >3. **Gama Alta/Profesiona (Edición / Carga Pesada):**
@@ -154,13 +154,13 @@ En el punto anterior comparamos y clasificamos procesadores de arquitectura x86 
 | Apple M3                     | 19.100              | SoC soldado       | 8/8             | 4GHz                   | NP                   | ~20W            | Sí                                  |
 | Snapdragon X Plus X1P 64-100 | 21.400              | SoC soldado       | 10/10           | 3,4GHz                 | 42 MB en total       | ~20W            | Síu                                 |
 
->[!example] Sostenibilidad. Rendimiento por Vatio
+>[!question] Sostenibilidad. Rendimiento por Vatio
 >- Observad el *CPU Mark* del *Ryzen 5 5600G* y el del *Apple M3* o *Snapdragon X Plus*. Rinden prácticamente los mismo. Ahora mirad la columna de consumo. **¿Por qué un portátil con chip ARM aguanta 15 horas de batería y apenas se calienta, mientras que una torre tradicional necesita disipadores de calor y ventiladores?**
 
->[!example] La trampa de la reparabilidad
+>[!question] La trampa de la reparabilidad
 >En la torre con el *Core i3-12100*, si dentro de 3 años el cliente necesita más potencia o se quema la placa base, cambiamos esa pieza por 80 € y el ordenador sigue funcionando. **Si en el equipo con *Apple M3* o *Snapdragon* falla la memoria RAM o se estropea el chip, ¿qué ocurre?**
 
->[!example] El veredicto del consultor
+>[!question] El veredicto del consultor
 >Vuestro cliente de la tienda local os dice: 'Quiero un equipo para tenerlo fijo en el mostrador cobrando y haciendo pedidos durante 8 años'.
 >**¿Le recomendáis una torre modular x86 (Intel/AMD) o un equipo compacto con chip ARM soldado?** Justificad vuestra respuesta valorando coste inicial, consumo de luz y facilidad de reparación.
 >Partimos de los siguientes supuestos:
@@ -168,6 +168,9 @@ En el punto anterior comparamos y clasificamos procesadores de arquitectura x86 
 >- Un MiniPC con procesador ARM puede estar sobre los 850€
 >- Tomamos como base que el comercio está abierto 8 horas al día, 300 días al año (2400 horas anuales) y un precio medio de la electricidad de 0,18€KWh.
 
+>[!question] A103(CE1+CE5) Comparativa de CPU
+>Entrega en formato pdf el documento `Comparativa_CPU`. 
+>El documento deberá contener todas las respuestas a las cuestiones anteriores.
 # 2. RAM
 
 Analogía:

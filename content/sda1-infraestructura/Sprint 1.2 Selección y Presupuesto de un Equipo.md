@@ -224,3 +224,84 @@ En Linux podríamos ejecutar en el terminal el comando `free -h`
 >|[4](https://www.pccomponentes.com/pccom-work-intel-core-i3-12100-16gb-500gb-ssd-v4)| | | | | |
 >|[5](https://www.pccomponentes.com/pccom-studio-intel-core-i7-14700kf-32gb-2tb-ssd-rtx-5070-ti-v2-windows-11-pro)| | | | | |
 
+# 3. Almacenamiento secundario
+
+El almacenamiento secundario es el conjunto de dispositivos que permiten **guardar información de forma permanente**, incluso cuando apagamos el ordenador.
+
+En estos dispositivos se almacenan el sistema operativo, los programas, los documentos, las fotografías y otros archivos.
+
+La principal diferencia con la memoria RAM es que esta última es volátil: pierde su contenido cuando se interrumpe la alimentación eléctrica.
+
+| Característica | Memoria RAM | Almacenamiento secundario |
+|---|---|---|
+| **Función** | Guardar temporalmente datos en uso | Guardar archivos y programas |
+| **Volatilidad** | Volátil | No volátil |
+| **Velocidad** | Muy alta | Generalmente inferior a la RAM |
+| **Capacidad habitual** | 8–32 GB | 256 GB–4 TB |
+| **Conserva datos al apagar** | No | Sí |
+## 3.1 Principales tecnologías
+
+#### HDD (Hard Disk Drive)
+
+Disco duro mecánico que almacena información magnéticamente en platos giratorios.
+
+- Gran capacidad a bajo precio.  
+- Tiene componentes mecánicos.
+- Más lento y sensible a golpes.
+- Adecuado para almacenar grandes cantidades de archivos.
+
+![[../../../hdd.png|250]]
+
+#### SSD SATA (Solid State Drive)
+
+Unidad de estado sólido que utiliza memoria flash, sin partes móviles.
+
+- Mayor velocidad que un HDD.
+- Utiliza habitualmente la interfaz SATA III.
+- Velocidad secuencial típica de hasta unos 550 MB/s.
+- Buena opción para modernizar ordenadores antiguos.
+![[../../../ssd.png|250]]
+
+#### SSD NVMe (Non-Volatile Memory Express)
+
+Unidad de estado sólido que normalmente utiliza PCI Express para comunicarse con el ordenador.
+
+- Velocidad muy superior a SATA.
+- Habitualmente tiene formato físico M.2.
+- Velocidades de varios miles de MB/s.
+- Ideal para equipos modernos y aplicaciones exigentes.
+![[../../../Pasted image 20261012200855.png|250]]
+## 3.2 Características técnicas
+Para comparar dispositivos de almacenamiento, estudiaremos cuatro características.
+
+|Característica|Explicación|
+|---|---|
+|Tecnología|HDD o SSD|
+|Capacidad|Cantidad de información que puede almacenar, expresada en GB o TB|
+|Interfaz|Sistema de conexión y comunicación: SATA o PCIe/NVMe|
+|Velocidad de lectura secuencial|Cantidad de datos que puede leer por segundo, expresada en MB/s|
+>[!question] Ampliación de análisis de equipos comerciales
+> Renombra el archivo 'Analisis_RAM.docx' por '**Analisis_PC.docx**'
+> La tabla completa podría tener esta estructura:
+> 
+>| Torre                              | Tipo almacenamiento | Capacidad | Interfaz | Lectura (MB/s) |
+>| ---------------------------------- | ------------------- | --------- | -------- | -------------- |
+>| [1](https://www.pccomponentes.com/pc-differo-v15-intel-core-i3-12100-8gb-500gb-ssd-nvme-mini-tower)                  | ...                 | ...       | ...      | ...            |
+>| [2](https://www.pccomponentes.com/pccom-work-amd-ryzen-5-8500g-16gb-1tb-ssd)       | ...                 | ...       | ...      | ...            |
+>| [3](https://www.pccomponentes.com/pc-sobremesa-hp-z2-tower-g1i-intel-core-ultra-7-265k-64gb-1tb-ssd-intel-graphics-windows-11-pro-wi-fi-7)      | ...                 | ...       | ...      | ...            |
+>| [4](https://www.pccomponentes.com/pccom-work-intel-core-i3-12100-16gb-500gb-ssd-v4)     | ...                 | ...       | ...      | ...            |
+>| [5](https://www.pccomponentes.com/pccom-studio-intel-core-i7-14700kf-32gb-2tb-ssd-rtx-5070-ti-v2-windows-11-pro) | ...                 | ...       | ...      | ...            |
+>
+>Si alguna torre tiene dos unidades de almacenamiento, deberás registrar ambas.
+>1. Identifica si utiliza HDD, SSD SATA o SSD NVMe.
+>2. Indica su capacidad en GB o TB.
+>3. Investiga qué interfaz de conexión utiliza. 
+>4. Localiza la velocidad de lectura secuencial anunciada por el fabricante, si está disponible.
+>5. **Cuando el fabricante no proporcione algún dato, escribe «No especificado». No inventes valores ni utilices los de otro modelo.**
+
+>[!question] Responde a estas tres cuestiones:
+>Después, responde a estas tres cuestiones:
+ >- **P1**. ¿Qué torre dispone del almacenamiento más rápido? Justifica tu respuesta.
+>- **P2**. ¿Qué torre tiene mayor capacidad total de almacenamiento? ¿Coincide con la torre que tiene el procesador más rápido?    
+>- **P3**. Para un ordenador destinado a tareas de ofimática y navegación web, ¿elegirías un HDD de 2 TB o un SSD NVMe de 500 GB? Justifica tu elección
+****

@@ -250,7 +250,7 @@ Disco duro mecánico que almacena información magnéticamente en platos girator
 - Más lento y sensible a golpes.
 - Adecuado para almacenar grandes cantidades de archivos.
 
-![[../../../hdd.png|250]]
+![[../recursos/hdd.png|250]]
 
 #### SSD SATA (Solid State Drive)
 
@@ -260,7 +260,7 @@ Unidad de estado sólido que utiliza memoria flash, sin partes móviles.
 - Utiliza habitualmente la interfaz SATA III.
 - Velocidad secuencial típica de hasta unos 550 MB/s.
 - Buena opción para modernizar ordenadores antiguos.
-![[../../../ssd.png|250]]
+![[../recursos/ssd.png|250]]
 
 #### SSD NVMe (Non-Volatile Memory Express)
 
@@ -270,7 +270,7 @@ Unidad de estado sólido que normalmente utiliza PCI Express para comunicarse co
 - Habitualmente tiene formato físico M.2.
 - Velocidades de varios miles de MB/s.
 - Ideal para equipos modernos y aplicaciones exigentes.
-![[../../../Pasted image 20261012200855.png|250]]
+![[../recursos/nvme.png|250]]
 ## 3.2 Características técnicas
 Para comparar dispositivos de almacenamiento, estudiaremos cuatro características.
 

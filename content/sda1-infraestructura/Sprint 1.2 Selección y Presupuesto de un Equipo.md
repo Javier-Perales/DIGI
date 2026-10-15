@@ -304,4 +304,114 @@ Para comparar dispositivos de almacenamiento, estudiaremos cuatro característic
  >- **P1**. ¿Qué torre dispone del almacenamiento más rápido? Justifica tu respuesta.
 >- **P2**. ¿Qué torre tiene mayor capacidad total de almacenamiento? ¿Coincide con la torre que tiene el procesador más rápido?    
 >- **P3**. Para un ordenador destinado a tareas de ofimática y navegación web, ¿elegirías un HDD de 2 TB o un SSD NVMe de 500 GB? Justifica tu elección
-****
+
+
+# 4. Fuentes de alimentación y eficiencia energética
+
+La **fuente de alimentación** (PSU, *Power Supply Unit*) transforma la corriente alterna de la red eléctrica en corriente continua, que necesitan los componentes de un ordenador de sobremesa.
+
+Al elegir una fuente debemos comprobar **dos características diferentes**:
+- **Potencia (W):** cuánta energía por segundo puede suministrar a los componentes. Se expresa en vatios.
+- **Eficiencia (%):** qué proporción de la energía tomada del enchufe llega realmente a los componentes. La parte restante se pierde principalmente en forma de calor.
+ 
+## 4.1. ¿Qué significa que una fuente sea eficiente?
+
+Imaginad dos fuentes que suministran **200 W a los componentes** del mismo ordenador:
+- Una fuente con **80 % de eficiencia** necesita tomar **250 W del enchufe**.
+- Una fuente con **90 % de eficiencia** necesita tomar aproximadamente **222,2 W del enchufe**.
+
+La segunda desperdicia menos energía para realizar el mismo trabajo.
+
+## 4.2. Certificación 80 PLUS
+
+**80 PLUS** es un programa de certificación que permite comparar la eficiencia de determinadas fuentes de alimentación. Sus niveles más habituales en equipos de sobremesa son **Standard, Bronze, Silver, Gold, Platinum y Titanium**.
+
+| Nivel de Certificación          | Eficiencia típica al 50 % de carga | Pérdida en calor | Uso recomendado en la empresa                                     |
+| :------------------------------ | :--------------------------------: | :--------------: | :---------------------------------------------------------------- |
+| **Genérica (Sin sello)**        |            ~65 % - 70 %            |   30 % - 35 %    | ❌ **Desaconsejada**: riesgo eléctrico y mayor gasto energético.   |
+| **80 PLUS White (Básica)**      |                80 %                |       20 %       | Equipos de uso esporádico o presupuestos muy ajustados.           |
+| **80 PLUS Bronze**              |                85 %                |       15 %       | Puesto de oficina estándar y comercios de proximidad.             |
+| **80 PLUS Gold**                |                90 %                |       10 %       | Puestos con jornadas intensivas (cajas, TPV, servidores locales). |
+| **80 PLUS Platinum / Titanium** |            92 % - 94 %             |    6 % - 8 %     | Servidores 24/7 y estaciones de trabajo de alto rendimiento.      |
+**Fuente de consulta:** [80 PLUS – Tabla oficial para 230 V EU](https://www.clearesult.com/80plus/taxonomy/term/9). Podéis comprobar si un modelo concreto aparece en el [buscador de fuentes certificadas](https://www.clearesult.com/80plus/).
+## 4.3. ¿Cuánto dinero puede ahorrar una fuente eficiente?
+
+Recuperamos el caso de **la tienda local** estudiado al comparar las CPU. El negocio utiliza el ordenador **8 horas al día, 300 días al año** y paga **0,18 €/kWh** por la electricidad.
+
+Para aislar el efecto de la fuente, comparamos **dos fuentes hipotéticas de 400 W** que alimentan exactamente el mismo equipo, cuando este solicita **200 W de salida** (el 50 % de su potencia nominal).
+
+
+| Dato                                 | Fuente A (Bronze) | Fuente B (Gold) |
+| ------------------------------------ | ----------------: | --------------: |
+| Potencia nominal de la fuente        |             400 W |           400 W |
+| Potencia entregada a los componentes |             200 W |           200 W |
+| Eficiencia al 50 % de carga          |              88 % |            92 % |
+| Potencia tomada del enchufe          |          227,27 W |        217,39 W |
+| Energía en 2.400 horas               |        545,45 kWh |      521,74 kWh |
+| **Coste eléctrico anual**            |       **98,18 €** |     **93,91 €** |
+1.. **Consumo anual (kWh):** $$\text{Consumo (kWh)} = \frac{\text{Potencia tomada del enchufe (W)} \times \text{Horas de uso al año (h)}}{1000}$$ 2. **Coste anual estimado (€/año):** > $$\text{Coste anual (€)} = \text{Consumo (kWh)} \times \text{Precio de la electricidad (€/kWh)}$$ 
+**Resultado:** bajo estos supuestos, la fuente Gold ahorraría aproximadamente **4,27 € al año** respecto a la Bronze. En **8 años**, el ahorro sería de unos **34,15 €**, si las condiciones no cambian.
+
+# 5. Basura electrónica (RAEE) y reparabilidad
+
+Cuando un ordenador, un monitor o un periférico deja de utilizarse y se desecha, puede convertirse en un **residuo de aparato eléctrico y electrónico (RAEE)**. En inglés se utiliza la expresión ***e-waste***.
+
+Estos equipos contienen materiales valiosos, como metales y plásticos, pero también componentes que requieren una recogida y un tratamiento adecuados. **No deben tirarse al contenedor de basura convencional.**
+## 5.1. Antes de tirar, ¿podemos alargar su vida útil?
+
+| Decisión                          | Ejemplo en el comercio del cliente                                                  | ¿Qué conseguimos?                                       |
+| --------------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| **Evitar una compra innecesaria** | No sustituir un ordenador que sigue cubriendo las necesidades del TPV.              | Evitar generar residuos antes de tiempo.                |
+| **Reparar o ampliar**             | Cambiar un SSD, aumentar la RAM o sustituir una pieza averiada.                     | Prolongar la vida útil del equipo.                      |
+| **Reutilizar**                    | Destinar un monitor funcional a otro puesto del negocio.                            | Aprovechar un producto que todavía funciona.            |
+| **Reciclar correctamente**        | Entregar un teclado irreparable o una fuente averiada en un canal de recogida RAEE. | Facilitar un tratamiento seguro y recuperar materiales. |
+**Idea clave:** reciclar es importante, pero **evitar residuos, reparar y reutilizar** puede ser preferible cuando el dispositivo sigue siendo seguro y útil.
+
+> [!tip] Un ordenador lento no es necesariamente basura
+> Si el equipo de la tienda tarda demasiado en arrancar, **antes de recomendar uno nuevo** comprobad si cumple los requisitos del negocio y si una ampliación de RAM, un SSD o una actualización del software permitirían seguir utilizándolo.
+>
+
+## 5.2. ¿Cómo valoramos la reparabilidad de un equipo?
+
+La **reparabilidad** es la facilidad para mantener, desmontar, reparar o sustituir componentes sin desechar todo el ordenador.
+
+Para comparar nuestras propuestas utilizaremos un **índice didáctico de reparabilidad de 0 a 5 puntos**. **No es una calificación oficial del fabricante**.
+
+| Criterio que debemos verificar | Puntos |
+|---|---:|
+| Permite acceder a los componentes sin dañarlos. | 1 |
+| La memoria RAM puede sustituirse o ampliarse. | 1 |
+| La unidad de almacenamiento puede sustituirse. | 1 |
+| La fuente de alimentación o el cargador puede sustituirse. | 1 |
+| Existen repuestos o documentación de mantenimiento para el modelo. | 1 |
+| **Máximo** | **5 puntos** |
+
+**Puntuación:** asignad **1** cuando el criterio esté confirmado y **0** cuando se haya comprobado que no se cumple. Si no encontráis información suficiente, anotad **«No especificado»**; no lo confundáis con una imposibilidad demostrada de reparación ni inventéis una puntuación total.
+
+>[!question] Torre modular frente a equipo compacto
+>Recuperad los dos tipos de equipos valorados en la sección de CPU: **torre modular x86** y **equipo compacto con chip ARM**.
+>
+>- Aplicad el índice anterior a dos modelos concretos. Buscad información en sus fichas técnicas, manuales o documentación de reparación.
+>- ¿Qué componentes podrían sustituirse en cada uno si fallan después de tres años?
+>- ¿Qué opción recomendaríais para el mostrador de un comercio que quiere utilizar el puesto durante **ocho años**? Justificad tanto sus ventajas como sus limitaciones.
+
+## 5.3. ¿Dónde acaba la basura electrónica?
+
+Los RAEE deben entregarse en un **canal de recogida autorizado**, por ejemplo un punto limpio que admita ese tipo y procedencia de residuo, el distribuidor en los supuestos correspondientes o un gestor de RAEE autorizado. En un negocio hay que comprobar qué sistema de recogida corresponde a sus residuos.
+
+**Antes de entregar o reutilizar un ordenador que haya almacenado información del comercio**, es imprescindible eliminar los datos de clientes, contraseñas y documentos mediante un procedimiento adecuado de borrado seguro o gestión del soporte.
+
+**Fuente de consulta:** [MITECO – Recogida de residuos de aparatos eléctricos y electrónicos](https://www.miteco.gob.es/es/calidad-y-evaluacion-ambiental/temas/prevencion-y-gestion-residuos/flujos/domesticos/fracciones/aparatos_electr/electricos-y-electronicos-donde-depositarlos.html).
+
+>[!question] Decide el destino de los equipos del cliente
+>Durante el inventario de la tienda encuentras estos dispositivos. Completa la tabla con una **decisión razonada**: mantener, reparar/ampliar, reutilizar o entregar como RAEE.
+>
+>| Dispositivo | Situación detectada | Decisión | Justificación y siguiente paso |
+>|---|---|---|---|
+>| Ordenador de caja | Funciona, pero arranca muy lento. Tiene HDD y 8 GB de RAM. | | |
+>| Monitor de 22 pulgadas | Funciona correctamente, pero se ha comprado otro más grande. | | |
+>| Teclado | Tiene varias teclas averiadas y la reparación no es viable. | | |
+>| Antiguo PC del gerente | Se va a retirar y contiene facturas y datos de clientes. | | |
+>
+>**Importante:** no todos los dispositivos deben acabar en el mismo lugar. Diferenciad los que todavía tienen utilidad de los que ya son residuos y tened en cuenta la protección de datos.
+

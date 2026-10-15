@@ -322,6 +322,10 @@ Imaginad dos fuentes que suministran **200 W a los componentes** del mismo orden
 
 La segunda desperdicia menos energía para realizar el mismo trabajo.
 
+**Fórmulas:**
+
+- `Eficiencia = Potencia de salida / Potencia de entrada` (expresada como porcentaje si multiplicamos por 100).
+- `Potencia de entrada (W) = Potencia de salida (W) / Eficiencia` (la eficiencia se introduce como decimal: 0,90 para el 90 %).
 ## 4.2. Certificación 80 PLUS
 
 **80 PLUS** es un programa de certificación que permite comparar la eficiencia de determinadas fuentes de alimentación. Sus niveles más habituales en equipos de sobremesa son **Standard, Bronze, Silver, Gold, Platinum y Titanium**.

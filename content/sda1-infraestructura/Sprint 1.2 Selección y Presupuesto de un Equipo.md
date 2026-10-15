@@ -355,8 +355,10 @@ Para aislar el efecto de la fuente, comparamos **dos fuentes hipotéticas de 400
 | Energía en 2.400 horas               |        545,45 kWh |      521,74 kWh |
 | **Coste eléctrico anual**            |       **98,18 €** |     **93,91 €** |
 
-1.. **Consumo anual (kWh):** $$\text{Consumo (kWh)} = \frac{\text{Potencia tomada del enchufe (W)} \times \text{Horas de uso al año (h)}}{1000}$$ 
-2. **Coste anual estimado (€/año):** > $$\text{Coste anual (€)} = \text{Consumo (kWh)} \times \text{Precio de la electricidad (€/kWh)}$$ 
+**Consumo anual (kWh):** 
+$$\text{Consumo (kWh)} = \frac{\text{Potencia tomada del enchufe (W)} \times \text{Horas de uso al año (h)}}{1000}$$ 
+**Coste anual estimado (€/año):**  
+ $$\text{Coste anual (€)} = \text{Consumo (kWh)} \times \text{Precio de la electricidad (€/kWh)}$$ 
 **Resultado:** bajo estos supuestos, la fuente Gold ahorraría aproximadamente **4,27 € al año** respecto a la Bronze. En **8 años**, el ahorro sería de unos **34,15 €**, si las condiciones no cambian.
 
 # 5. Basura electrónica (RAEE) y reparabilidad

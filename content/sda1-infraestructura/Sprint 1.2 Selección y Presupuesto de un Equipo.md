@@ -323,9 +323,9 @@ Imaginad dos fuentes que suministran **200 W a los componentes** del mismo orden
 La segunda desperdicia menos energía para realizar el mismo trabajo.
 
 **Fórmulas:**
-
 - `Eficiencia = Potencia de salida / Potencia de entrada` (expresada como porcentaje si multiplicamos por 100).
 - `Potencia de entrada (W) = Potencia de salida (W) / Eficiencia` (la eficiencia se introduce como decimal: 0,90 para el 90 %).
+
 ## 4.2. Certificación 80 PLUS
 
 **80 PLUS** es un programa de certificación que permite comparar la eficiencia de determinadas fuentes de alimentación. Sus niveles más habituales en equipos de sobremesa son **Standard, Bronze, Silver, Gold, Platinum y Titanium**.
@@ -337,13 +337,14 @@ La segunda desperdicia menos energía para realizar el mismo trabajo.
 | **80 PLUS Bronze**              |                85 %                |       15 %       | Puesto de oficina estándar y comercios de proximidad.             |
 | **80 PLUS Gold**                |                90 %                |       10 %       | Puestos con jornadas intensivas (cajas, TPV, servidores locales). |
 | **80 PLUS Platinum / Titanium** |            92 % - 94 %             |    6 % - 8 %     | Servidores 24/7 y estaciones de trabajo de alto rendimiento.      |
+
 **Fuente de consulta:** [80 PLUS – Tabla oficial para 230 V EU](https://www.clearesult.com/80plus/taxonomy/term/9). Podéis comprobar si un modelo concreto aparece en el [buscador de fuentes certificadas](https://www.clearesult.com/80plus/).
+
 ## 4.3. ¿Cuánto dinero puede ahorrar una fuente eficiente?
 
 Recuperamos el caso de **la tienda local** estudiado al comparar las CPU. El negocio utiliza el ordenador **8 horas al día, 300 días al año** y paga **0,18 €/kWh** por la electricidad.
 
 Para aislar el efecto de la fuente, comparamos **dos fuentes hipotéticas de 400 W** que alimentan exactamente el mismo equipo, cuando este solicita **200 W de salida** (el 50 % de su potencia nominal).
-
 
 | Dato                                 | Fuente A (Bronze) | Fuente B (Gold) |
 | ------------------------------------ | ----------------: | --------------: |
@@ -353,7 +354,9 @@ Para aislar el efecto de la fuente, comparamos **dos fuentes hipotéticas de 400
 | Potencia tomada del enchufe          |          227,27 W |        217,39 W |
 | Energía en 2.400 horas               |        545,45 kWh |      521,74 kWh |
 | **Coste eléctrico anual**            |       **98,18 €** |     **93,91 €** |
-1.. **Consumo anual (kWh):** $$\text{Consumo (kWh)} = \frac{\text{Potencia tomada del enchufe (W)} \times \text{Horas de uso al año (h)}}{1000}$$ 2. **Coste anual estimado (€/año):** > $$\text{Coste anual (€)} = \text{Consumo (kWh)} \times \text{Precio de la electricidad (€/kWh)}$$ 
+
+1.. **Consumo anual (kWh):** $$\text{Consumo (kWh)} = \frac{\text{Potencia tomada del enchufe (W)} \times \text{Horas de uso al año (h)}}{1000}$$ 
+2. **Coste anual estimado (€/año):** > $$\text{Coste anual (€)} = \text{Consumo (kWh)} \times \text{Precio de la electricidad (€/kWh)}$$ 
 **Resultado:** bajo estos supuestos, la fuente Gold ahorraría aproximadamente **4,27 € al año** respecto a la Bronze. En **8 años**, el ahorro sería de unos **34,15 €**, si las condiciones no cambian.
 
 # 5. Basura electrónica (RAEE) y reparabilidad

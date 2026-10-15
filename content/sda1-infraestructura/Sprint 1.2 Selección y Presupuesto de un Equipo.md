@@ -374,6 +374,7 @@ Estos equipos contienen materiales valiosos, como metales y plásticos, pero tam
 | **Reparar o ampliar**             | Cambiar un SSD, aumentar la RAM o sustituir una pieza averiada.                     | Prolongar la vida útil del equipo.                      |
 | **Reutilizar**                    | Destinar un monitor funcional a otro puesto del negocio.                            | Aprovechar un producto que todavía funciona.            |
 | **Reciclar correctamente**        | Entregar un teclado irreparable o una fuente averiada en un canal de recogida RAEE. | Facilitar un tratamiento seguro y recuperar materiales. |
+
 **Idea clave:** reciclar es importante, pero **evitar residuos, reparar y reutilizar** puede ser preferible cuando el dispositivo sigue siendo seguro y útil.
 
 > [!tip] Un ordenador lento no es necesariamente basura

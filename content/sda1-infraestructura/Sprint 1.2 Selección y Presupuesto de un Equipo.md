@@ -305,6 +305,55 @@ Para comparar dispositivos de almacenamiento, estudiaremos cuatro característic
 >- **P2**. ¿Qué torre tiene mayor capacidad total de almacenamiento? ¿Coincide con la torre que tiene el procesador más rápido?    
 >- **P3**. Para un ordenador destinado a tareas de ofimática y navegación web, ¿elegirías un HDD de 2 TB o un SSD NVMe de 500 GB? Justifica tu elección
 
+>[!question] El puzzle del Hardware (PARTE 1)
+>Tu misión consiste en seleccionar los componentes adecuados para cada uno de los siguientes clientes, comprobar su compatibilidad y elaborar un presupuesto real.
+>**1. Cliente 1 (Libreria de barrio).** Solo usa el navegador web, procesadores de texto (LibreOffice), cobro en caja y correo electrónico.
+>**2. Cliente 2 (Clínica Veterinaria).** Tiene abierto el programa de gestión de citas, el navegador con 15 pestañas y necesitar abrir radiografías digitales rápido, además de guardar un historial enorme de fotos y fichas médicas durante años sin que se borren.
+>**3. Cliente 3 (Escuela de deportes náuticos).** Editan videos promocionales en 4K grabados con cámaras de acción en el mar, diseñan carteles publicitarios pesados y manejan múltiples aplicaciones a la vez.
+>
+>**CATÁLOGO CERRADO**
+>
+>| Componente | Denominación Comercial |
+>| :---------- | :----------------------------------------------- |
+>| 🔴 CPU 1    | AMD Ryzen 3 3200G (3.6 GHz)                      |
+>| 🔴 CPU 2    | AMD Ryzen 5 5600G (3.9 GHz)                      |
+>| 🔴 CPU 3    | Intel Core i7-14700K (3.4 GHz)                   |
+>| 🟡 RAM 1    | Kingston FURY Beast DDR4 3200 MHz 8GB (1x8GB)    |
+>| 🟡 RAM 2    | Corsair Vengeance LPX DDR4 3200 MHz 16GB (2x8GB) |
+>| 🟡 RAM 3    | Corsair Vengeance DDR5 6000 MHz 32GB (2x16GB)    |
+>| 🔵 Almac. 1 | Kioxia Exceria Plus G3 SSD 500GB NVMe M.2        |
+>| 🔵 Almac. 2 | WD Blue SN580 SSD 1TB NVMe M.2                   |
+>| 🔵 Almac. 3 | Samsung 990 PRO SSD 2TB NVMe PCIe 4.0            |
+>| 🔵 Almac. 4 | Seagate BarraCuda 3.5" 2TB SATA3 (HDD)           |
+> 
+> **Crea un documento denominado `Puzzle.docx` en la carpeta `02_Hardware`. Con la siguiente información:**
+>  
+>- **Torre 1 (Librería):** CPU: `_______` + RAM: `_______` + Almacenamiento: `_______`
+>- **Torre 2 (Clínica Veterinaria):** CPU: `_______` + RAM: `_______` + Almacenamiento 1 (Rápido): `_______` + Almacenamiento 2 (Masivo): `_______`
+>- **Torre 3 (Escuela Náutica):** CPU: `_______` + RAM: `_______` + Almacenamiento: `_______`
+> 
+> **Justifica tus decisiones:**
+> Por cada cliente, responde:
+> 1. ¿Por qué has seleccionado ese procesador?
+> 2. ¿Por qué consideras que necesita esa cantidad de memoria RAM?
+> 3. ¿Por qué has elegido ese tipo y capacidad de almacenamiento?
+> 4. ¿Qué componente mejoraría primero si el cliente necesitase más rendimiento?
+
+>[!question] El puzzle del Hardware (PARTE 2)
+> Te asignaré uno de los tres clientes anteriores de la fase anterior. Ahora tendrás que transformar la propuesta técnica en un presupuesto utilizando la plataforma https://pccomponentes.com
+> Completa el documento anterior, `puzzle.docx` con la siguiente tabla:
+> Cliente: _ _ _ _ _
+> 
+>| Componente               | Denominación comercial | Precio sin IVA (€) |
+>| ------------------------ | ---------------------- | ------------------ |
+>| CPU                      |                        |                    |
+>| RAM                      |                        |                    |
+>| SSD principal            |                        |                    |
+>| Almacenamiento adicional |                        |                    |
+>| **TOTAL sin IVA**        |                        | **€**              |
+>| **IVA (21%)**            |                        |                    |
+>| **TOTAL con IVA**        |                        | **€**              |
+>
 
 # 4. Fuentes de alimentación y eficiencia energética
 

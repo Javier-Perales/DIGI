@@ -355,6 +355,8 @@ Para comparar dispositivos de almacenamiento, estudiaremos cuatro característic
 >| **TOTAL con IVA**        |                        | **€**              |
 >
 
+>[!question] A104 (CE1+CE5) Puzzle
+>Entrega de la actividad de puzzle en formato pdf.
 # 4. Fuentes de alimentación y eficiencia energética
 
 La **fuente de alimentación** (PSU, *Power Supply Unit*) transforma la corriente alterna de la red eléctrica en corriente continua, que necesitan los componentes de un ordenador de sobremesa.

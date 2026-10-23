@@ -1,13 +1,13 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: "Digitalización"
+  pageTitle: "DigitalizaciÃ³n"
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
   analytics:
     provider: plausible
   locale: es-ES
-  baseUrl: javier-perales.github.io
+  baseUrl: "javier-perales.github.io/DIGI"
   ignorePatterns:
     - private
     - templates
@@ -163,7 +163,7 @@ plugins:
       position: left
       priority: 50
   - source: "@quartz-community/graph"
-    enabled: true
+    enabled: false
     layout:
       position: right
       priority: 40
@@ -289,5 +289,4 @@ layout:
         right: []
     canvas: {}
     bases: {}
-
 

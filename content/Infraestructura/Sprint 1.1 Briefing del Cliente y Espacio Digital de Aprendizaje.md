@@ -1,6 +1,6 @@
 ---
 title: "Sprint 1.1: Briefing y Espación digital"
-sda: "SdA 1: Oficina digital y conexión segura"
+sda: "Misión 1: Infraestructura"
 tags:
   - identidad-digital
   - epa

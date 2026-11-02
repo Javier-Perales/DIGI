@@ -48,6 +48,7 @@ En una pequeña empresa, una red permite:
 |LAN|Local Area Network|Red local de una oficina, vivienda o instituto.|
 |WLAN|Wireless Local Area Network|Red local inalámbrica, normalmente mediante Wi-Fi.|
 |WAN|Wide Area Network|Red extensa que conecta redes situadas en diferentes ubicaciones geográficas.|
+
 **¿Y qué es Internet?**
 
 Internet es una red mundial formada por numerosas redes interconectadas. Permite acceder a servicios como páginas web, correo electrónico, almacenamiento en la nube y aplicaciones de mensajería.
@@ -82,19 +83,20 @@ Aunque ambos conectan dispositivos, tienen funciones distintas.
 | Conecta dispositivos dentro de una red local Ethernet. | Interconecta redes.                                 |
 | Utiliza principalmente direcciones MAC.                | Utiliza direcciones IP para encaminar paquetes.     |
 | Permite conectar los PC e impresoras de una oficina.   | Permite conectar la red de la oficina con Internet. |
-
+ 
 # 3 ¿Cómo se conectan los dispositivos de nuestro negocio?
 
 Imaginemos que nuestro cliente dispone de los siguientes equipos:
 
-|Dispositivo|Tecnología recomendada|Motivo|
-|---|---|---|
-|Ordenador de administración|Ethernet|Conexión estable para el puesto fijo|
-|Ordenador de caja|Ethernet|Conexión estable para las operaciones|
-|Impresora de red|Ethernet|Compartirla entre varios empleados|
-|Portátil del gerente|Wi-Fi|Permite desplazarse por el negocio|
-|Teléfono móvil|Wi-Fi / 4G / 5G|Acceso inalámbrico y conectividad móvil|
-|Auriculares inalámbricos|Bluetooth|Comunicación de corto alcance|
+| Dispositivo                 | Tecnología recomendada | Motivo                                  |
+| --------------------------- | ---------------------- | --------------------------------------- |
+| Ordenador de administración | Ethernet               | Conexión estable para el puesto fijo    |
+| Ordenador de caja           | Ethernet               | Conexión estable para las operaciones   |
+| Impresora de red            | Ethernet               | Compartirla entre varios empleados      |
+| Portátil del gerente        | Wi-Fi                  | Permite desplazarse por el negocio      |
+| Teléfono móvil              | Wi-Fi / 4G / 5G        | Acceso inalámbrico y conectividad móvil |
+| Auriculares inalámbricos    | Bluetooth              | Comunicación de corto alcance           |
+
 ![[recursos/esquema_red.png]]
 
 >[!example] Diseña la conectividad de tu negocio

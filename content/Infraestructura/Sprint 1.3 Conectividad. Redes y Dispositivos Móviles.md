@@ -84,7 +84,7 @@ Aunque ambos conectan dispositivos, tienen funciones distintas.
 | Utiliza principalmente direcciones MAC.                | Utiliza direcciones IP para encaminar paquetes.     |
 | Permite conectar los PC e impresoras de una oficina.   | Permite conectar la red de la oficina con Internet. |
  
-# 3 ¿Cómo se conectan los dispositivos de nuestro negocio?
+## 2.2 ¿Cómo se conectan los dispositivos de nuestro negocio?
 
 Imaginemos que nuestro cliente dispone de los siguientes equipos:
 
@@ -127,4 +127,47 @@ Imaginemos que nuestro cliente dispone de los siguientes equipos:
 > **Entrega**
 >Guarda el esquema en PDF con el nombre `P1_Esquema_Conectividad.docx` en la carpeta `03_Redes` de DigiLab Solutions.
 
+## 2.3 Direcciones MAC
 
+Hasta ahora hemos visto que un **switch** permite conectar los ordenadores, impresoras y otros equipos de una red local Ethernet. Pero ¿cómo sabe el switch por qué puerto debe enviar la información para que llegue al destinatario correcto?
+
+Para responder, necesitamos conocer las **direcciones MAC**.
+
+Una **dirección MAC** (_Media Access Control_) es un identificador que utiliza una interfaz de red para comunicarse dentro de una red local, como Ethernet o Wi-Fi. En una comunicación Ethernet, las tramas incluyen una **MAC de origen** y una **MAC de destino**.
+
+Por tanto, **cada interfaz que envía y recibe tramas Ethernet como equipo de origen o destino necesita utilizar una dirección MAC**. Un ordenador con tarjeta Ethernet y Wi-Fi puede tener **dos direcciones MAC distintas**, una por cada interfaz.
+
+> [!info] ¿Cómo es una MAC?  
+> Las direcciones MAC habituales de Ethernet están formadas por **48 bits = 6 bytes**, representados mediante **12 dígitos hexadecimales** (del `0` al `9` y de la `A` a la `F`).
+> 
+> Por ejemplo: `0C:1A:2B:3C:4D:5E`
+> 
+> `0C` · `1A` · `2B` · `3C` · `4D` · `5E` → **6 grupos de 2 dígitos hexadecimales**.
+
+**¿Por qué se dice que las MAC son únicas?** Las direcciones MAC **asignadas universalmente por los fabricantes** se administran para que sean únicas a escala mundial. Tradicionalmente, una parte identifica a la organización fabricante y otra parte se asigna a la interfaz concreta. **Sin embargo, esta unicidad no es una garantía absoluta**: una dirección MAC puede modificarse por software, ser administrada localmente o generarse aleatoriamente, como ocurre en algunos móviles para proteger la privacidad.
+
+> [!tip] No confundas MAC con IP
+> 
+> - **MAC:** identifica una interfaz en las comunicaciones de una red local Ethernet o Wi-Fi. El switch Ethernet utiliza las MAC para decidir por qué puerto enviar las tramas.
+> - **IP:** es una dirección lógica que permite identificar y localizar interfaces y enviar paquetes entre redes. Los routers utilizan direcciones IP para encaminar esos paquetes.
+> 
+> Un mismo ordenador puede tener, al mismo tiempo, una dirección MAC y una dirección IP.
+
+>[!example] Consulta la dirección MAC de tu equipo
+> Abre el terminal y ejecuta `ip link`
+> 1. ¿Cuál es tu dirección MAC? 
+> 2. ¿Cuántos bytes y cuántos bits representan?
+> 3. ¿Qué diferencia hay entre una dirección MAC y una dirección IP?
+> 4. Si un ordenador tiene conexión Ethernet y Wi-Fi, ¿puede tener más de una MAC?
+> 5. ¿Por qué necesita un switch consultar las MAC de destino?
+
+# 3. Direccionamiento y servicios de red
+
+>[!task] ¿Cómo funciona Internet?
+> Internet es una red mundial formado por numerosas redes informáticas interconectadas. Estas redes pertenecen a empresas, universidades, administraciones públicas y proveedores de servicios. 
+> Visualiza el siguiente video [¿Cómo funciona Internet](https://www.youtube.com/watch?v=rw41W8crZ_Y) y responde a las siguientes preguntas:
+> 1. ¿Cómo se denomina la dirección única que identifica a cada dispositivo conectado a Internet? ¿Cuál es su estructura básica?
+> 2. ¿Qué es un servidor DNS y cuál es su funcionamiento en la navegación por Internet?
+> 3. Ejecuta el comando `ipconfig` (en Windows) o `ifconfig` (en Linux/Mac) en tu terminal y anota la dirección IP asignada a tu dispositivo. ¿Comparala con la dirección IP de tus compañeros de clase. ¿Son iguales o diferentes? ¿En qué se diferencian?
+
+**Recurso adicional:** [The Internet: IP and DNS](https://www.youtube.com/watch?v=5o8CwafCxnU)

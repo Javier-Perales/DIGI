@@ -99,7 +99,7 @@ Imaginemos que nuestro cliente dispone de los siguientes equipos:
 
 ![[recursos/esquema_red.png]]
 
->[!example] Diseña la conectividad de tu negocio
+>[!question] Diseña la conectividad de tu negocio
 >Identifica los dispositivos que necesitan conectividad y representar gráficamente cómo se conectarían dentro de la empresa asignada.
 >
 >**Fase 1. Recupera el briefing del cliente**. Completa una tabla similar a esta:
@@ -153,7 +153,7 @@ Por tanto, **cada interfaz que envía y recibe tramas Ethernet como equipo de or
 > 
 > Un mismo ordenador puede tener, al mismo tiempo, una dirección MAC y una dirección IP.
 
->[!example] Consulta la dirección MAC de tu equipo
+>[!question] Consulta la dirección MAC de tu equipo
 > Abre el terminal y ejecuta `ip link`
 > 1. ¿Cuál es tu dirección MAC? 
 > 2. ¿Cuántos bytes y cuántos bits representan?
@@ -163,7 +163,7 @@ Por tanto, **cada interfaz que envía y recibe tramas Ethernet como equipo de or
 
 # 3. Direccionamiento y servicios de red
 
->[!task] ¿Cómo funciona Internet?
+>[!question] ¿Cómo funciona Internet?
 > Internet es una red mundial formado por numerosas redes informáticas interconectadas. Estas redes pertenecen a empresas, universidades, administraciones públicas y proveedores de servicios. 
 > Visualiza el siguiente video [¿Cómo funciona Internet](https://www.youtube.com/watch?v=rw41W8crZ_Y) y responde a las siguientes preguntas:
 > 1. ¿Cómo se denomina la dirección única que identifica a cada dispositivo conectado a Internet? ¿Cuál es su estructura básica?
@@ -178,7 +178,7 @@ La dirección IP es el identificador de cada equipo/dispositivo dentro de un con
 
 Las **direcciones IP están formadas por 4 bytes (32 bits)**. Se suelen representar de la forma `a.b.c.d` donde cada una de estas letras representa un byte (8 bits) y su valor puede ir de `0` a `255`. ()
 
->[!task] Clases de direcciones IP
+>[!question] Clases de direcciones IP
 >Las direcciones IP se clasifican en **clases A, B, C, D y E**, según el rango de direcciones que abarcan. **Las clases A, B y C son las utilizadas para direccionar redes privadas y públicas**.
 >
 >Para identificar a qué clase pertenece una IP, nos debemos fijar en que los primeros bits del primer byte.
@@ -208,7 +208,7 @@ En cada IP tiene codificada la red a la que pertenece el equipo y al propio equi
 
 **La separación entre ambas partes viene dada por la mascara de red**. La máscara de subred es una dirección IP que indica qué parte de la dirección IP corresponde a la red y qué parte corresponde al host.
 
->[!warning] Por cada dirección IP, existen dos partes diferenciadas:
+>[!info] Por cada dirección IP, existen dos partes diferenciadas:
 >
 >- **Identificador de red**: Permite identificar a la red a la que pertenece el dispositivo.
 >- **Identificador de host**: Permite identificar al dispositivo dentro de la red.
@@ -222,7 +222,7 @@ Normalmente, podemos encontrarla representada de dos formas:
 
 **Recurso**: - [Red vs Host](https://www.youtube.com/watch?v=W_dTBb03oJQ&list=PLKwGLCp8O0jHi26RByHWd0-JOapWk-aH0&index=3)
 
->[!query] Identificador de red e identificador de host
+>[!question] Identificador de red e identificador de host
 >Dadas las siguientes direcciones IP y sus respectivas máscaras, indica cuál es el identificador de red y cuál es el identificador de host:
 > 
 > | #   | Dirección IP  | Máscara de Red | Identificador de Red (Net ID) | Identificador de Host (Host ID) |
@@ -239,7 +239,7 @@ Normalmente, podemos encontrarla representada de dos formas:
 >| 10  | 192.0.2.1     | /24            |                               |                                 |
 >
 
->[!query] Direccionamiento de equipos de red
+>[!question] Direccionamiento de equipos de red
 >Relaciona cada dirección IP con la red a la que pertenece. Habrá direcciones IP que no pertenezcan a ninguna de las redes indicadas, en cuyo caso habrá que obtener el identificador de red correspondiente.
 >
 >| Columna A: Direcciones IP (Dispositivos) | Columna B: Identificadores de Red |
@@ -256,7 +256,7 @@ Normalmente, podemos encontrarla representada de dos formas:
 >| 10. 192.168.2.1 /24                      |                                   |
 >
 
->[!query] Direcciones públicas vs direcciones privadas
+>[!question] Direcciones públicas vs direcciones privadas
 >Investiga y responde a las siguientes preguntas ([IP Pública vs Privada: ¡Descubre la Diferencia!](https://youtu.be/42j3i3N2_4U?si=pdZAZXtHgfrwRxIK)):
 >
 >- ¿Con qué tipos de IPs, publica o privada, utilizan los diferentes servicios de Internet?

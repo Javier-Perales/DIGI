@@ -171,3 +171,94 @@ Por tanto, **cada interfaz que envía y recibe tramas Ethernet como equipo de or
 > 3. Ejecuta el comando `ipconfig` (en Windows) o `ifconfig` (en Linux/Mac) en tu terminal y anota la dirección IP asignada a tu dispositivo. ¿Comparala con la dirección IP de tus compañeros de clase. ¿Son iguales o diferentes? ¿En qué se diferencian?
 
 **Recurso adicional:** [The Internet: IP and DNS](https://www.youtube.com/watch?v=5o8CwafCxnU)
+
+## 3.1 Direcciones IP
+
+La dirección IP es el identificador de cada equipo/dispositivo dentro de un conjunto de redes (Internet). Cada dispositivo conectado a Internet debe tener una dirección IP asignada.
+
+Las **direcciones IP están formadas por 4 bytes (32 bits)**. Se suelen representar de la forma `a.b.c.d` donde cada una de estas letras representa un byte (8 bits) y su valor puede ir de `0` a `255`. ()
+
+>[!task] Clases de direcciones IP
+>Las direcciones IP se clasifican en **clases A, B, C, D y E**, según el rango de direcciones que abarcan. **Las clases A, B y C son las utilizadas para direccionar redes privadas y públicas**.
+>
+>Para identificar a qué clase pertenece una IP, nos debemos fijar en que los primeros bits del primer byte.
+>![[recursos/clasesIP.png]]
+>
+>Recurso: [IP Decimal a binario](https://www.youtube.com/watch?v=-AsYSB8QOEQ&list=PLKwGLCp8O0jHi26RByHWd0-JOapWk-aH0)
+>
+>1. **Identifica la clase a la que pertenecen las siguientes direcciones IP:**
+ >   a. 12.168.14.255  
+ >   b. 80.58.12.68  
+ >   c. 172.67.14.92  
+ >   d. 200.255.192.64  
+ >   e. 190.72.90.0
+>    
+>2. **Completa la siguiente tabla indicando el rango de direcciones IP disponibles para cada una de las clases A, B y C:**
+>
+> | Clase   | Desde | Hasta |
+>| ------- | ----- | ----- |
+>| Clase A |       |       |
+>| Clase B |       |       |
+>| Clase C |       |       |
+>
+ 
+## 3.2 Identificador de red y de equipo
+
+En cada IP tiene codificada la red a la que pertenece el equipo y al propio equipo dentro de esa red. A cada una de estas partes se denomina identificador de red e identificador de equipo (host). 
+
+**La separación entre ambas partes viene dada por la mascara de red**. La máscara de subred es una dirección IP que indica qué parte de la dirección IP corresponde a la red y qué parte corresponde al host.
+
+>[!warning] Por cada dirección IP, existen dos partes diferenciadas:
+>
+>- **Identificador de red**: Permite identificar a la red a la que pertenece el dispositivo.
+>- **Identificador de host**: Permite identificar al dispositivo dentro de la red.
+
+La máscara de red se representa de la misma forma que una dirección IP, es decir, con 4 bytes separados por puntos. Los bits de la máscara que están en `1` indican la parte de la dirección IP que corresponde a la red, mientras que los bits en `0` indican la parte que corresponde al host.
+
+Normalmente, podemos encontrarla representada de dos formas:
+
+- **Notación decimal con puntos**: `255.255.255.0` En este caso los primeros 3 bytes están en `1` y el último en `0`, por lo que los primeros 24 bits corresponden a la red y los últimos 8 bits al host.
+- **Notación CIDR (Classless Inter-Domain Routing)**: `/24` En este caso, el número indica la cantidad de bits que corresponden a la red. En este caso, los primeros 24 bits corresponden a la red y los últimos 8 bits al host.
+
+**Recurso**: - [Red vs Host](https://www.youtube.com/watch?v=W_dTBb03oJQ&list=PLKwGLCp8O0jHi26RByHWd0-JOapWk-aH0&index=3)
+
+>[!task] Identificador de red e identificador de host
+>Dadas las siguientes direcciones IP y sus respectivas máscaras, indica cuál es el identificador de red y cuál es el identificador de host:
+> 
+> | #   | Dirección IP  | Máscara de Red | Identificador de Red (Net ID) | Identificador de Host (Host ID) |
+>| --- | ------------- | -------------- | ----------------------------- | ------------------------------- |
+>| 1   | 192.168.1.15  | 255.255.255.0  |                               |                                 |
+>| 2   | 10.0.0.42     | 255.0.0.0      |                               |                                 |
+>| 3   | 172.16.5.100  | 255.255.0.0    |                               |                                 |
+>| 4   | 192.168.100.2 | 255.255.255.0  |                               |                                 |
+>| 5   | 8.8.8.8       | 255.0.0.0      |                               |                                 |
+>| 6   | 172.31.0.1    | /16            |                               |                                 |
+>| 7   | 192.168.0.254 | /24            |                               |                                 |
+>| 8   | 10.25.50.75   | /8             |                               |                                 |
+>| 9   | 172.20.200.10 | /16            |                               |                                 |
+>| 10  | 192.0.2.1     | /24            |                               |                                 |
+>
+
+>[!task] Direccionamiento de equipos de red
+>Relaciona cada dirección IP con la red a la que pertenece. Habrá direcciones IP que no pertenezcan a ninguna de las redes indicadas, en cuyo caso habrá que obtener el identificador de red correspondiente.
+>
+>| Columna A: Direcciones IP (Dispositivos) | Columna B: Identificadores de Red |
+>| ---------------------------------------- | --------------------------------- |
+>| 1. 192.168.1.15 /24                      | A. 10.0.0.0 /8                    |
+>| 2. 172.16.50.4 /16                       | B. 192.168.1.0 /24                |
+>| 3. 10.1.1.100 /8                         | C. 172.16.0.0/16                  |
+>| 4. 192.168.1.200 /16                     | D. 192.168.50.0 /24               |
+>| 5. 172.16.1.25 /24                       | E. 172.20.0.0                     |
+>| 6. 10.254.254.254 /16                    | F. 10.0.0.0 /16                   |
+>| 7. 192.168.1.45 /24                      |                                   |
+>| 8. 172.16.100.1 /24                      |                                   |
+>| 9. 10.0.0.5 /16                          |                                   |
+>| 10. 192.168.2.1 /24                      |                                   |
+>
+
+>[!task] Direcciones públicas vs direcciones privadas
+>Investiga y responde a las siguientes preguntas ([IP Pública vs Privada: ¡Descubre la Diferencia!](https://youtu.be/42j3i3N2_4U?si=pdZAZXtHgfrwRxIK)):
+>
+>- ¿Con qué tipos de IPs, publica o privada, utilizan los diferentes servicios de Internet?
+>- Por tanto, ¿Cuál es la diferencia entre una dirección IP pública y una dirección IP privada?
+

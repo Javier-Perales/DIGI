@@ -222,7 +222,7 @@ Normalmente, podemos encontrarla representada de dos formas:
 
 **Recurso**: - [Red vs Host](https://www.youtube.com/watch?v=W_dTBb03oJQ&list=PLKwGLCp8O0jHi26RByHWd0-JOapWk-aH0&index=3)
 
->[!task] Identificador de red e identificador de host
+>[!query] Identificador de red e identificador de host
 >Dadas las siguientes direcciones IP y sus respectivas máscaras, indica cuál es el identificador de red y cuál es el identificador de host:
 > 
 > | #   | Dirección IP  | Máscara de Red | Identificador de Red (Net ID) | Identificador de Host (Host ID) |
@@ -239,7 +239,7 @@ Normalmente, podemos encontrarla representada de dos formas:
 >| 10  | 192.0.2.1     | /24            |                               |                                 |
 >
 
->[!task] Direccionamiento de equipos de red
+>[!query] Direccionamiento de equipos de red
 >Relaciona cada dirección IP con la red a la que pertenece. Habrá direcciones IP que no pertenezcan a ninguna de las redes indicadas, en cuyo caso habrá que obtener el identificador de red correspondiente.
 >
 >| Columna A: Direcciones IP (Dispositivos) | Columna B: Identificadores de Red |
@@ -256,7 +256,7 @@ Normalmente, podemos encontrarla representada de dos formas:
 >| 10. 192.168.2.1 /24                      |                                   |
 >
 
->[!task] Direcciones públicas vs direcciones privadas
+>[!query] Direcciones públicas vs direcciones privadas
 >Investiga y responde a las siguientes preguntas ([IP Pública vs Privada: ¡Descubre la Diferencia!](https://youtu.be/42j3i3N2_4U?si=pdZAZXtHgfrwRxIK)):
 >
 >- ¿Con qué tipos de IPs, publica o privada, utilizan los diferentes servicios de Internet?

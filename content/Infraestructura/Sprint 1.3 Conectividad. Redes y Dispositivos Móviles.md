@@ -99,7 +99,7 @@ Imaginemos que nuestro cliente dispone de los siguientes equipos:
 
 ![[recursos/esquema_red.png]]
 
->[!question] Diseña la conectividad de tu negocio
+>[!question] A107.1 (CE1) Diseña la conectividad de tu negocio
 >Identifica los dispositivos que necesitan conectividad y representar gráficamente cómo se conectarían dentro de la empresa asignada.
 >
 >**Fase 1. Recupera el briefing del cliente**. Completa una tabla similar a esta:
@@ -261,4 +261,80 @@ Normalmente, podemos encontrarla representada de dos formas:
 >
 >- ¿Con qué tipos de IPs, publica o privada, utilizan los diferentes servicios de Internet?
 >- Por tanto, ¿Cuál es la diferencia entre una dirección IP pública y una dirección IP privada?
+
+## 3.3 Configuración del entorno de red
+
+Para que un equipo/dispositivo pueda conectarse a la red de Internet, no solo vale con una IP y su máscara, necesita también conocer la puerta de enlace y el servidor de nombres.
+
+#### Puerta de enlace
+
+En una red de área local (LAN), la **puerta de enlace predeterminada** es la dirección IP local del dispositivo al que los equipos envían los datos destinados a otras redes, como Internet. En redes domésticas y de pequeñas oficinas (SOHO, _Small Office/Home Office_), ese dispositivo suele ser el router que proporciona el proveedor de servicios de Internet (ISP, _Internet Service Provider_).
+
+El router tiene una dirección IP en cada una de sus dos interfaces principales:
+
+- **Interfaz LAN (red local).** Su dirección IP pertenece a nuestra red y se puede configurar en el router. Por ejemplo, si la IP local del router es `192.168.1.1`, esa será la puerta de enlace que utilizarán los equipos de la red.
+- **Interfaz WAN (conexión con el proveedor).** Su dirección IP la asigna el proveedor y permite al router comunicarse con la red de este para acceder a Internet.
+
+![[recursos/Diagrama de red de oficina.png]]
+#### NAT (*Network Address Translation*)
+
+Las **direcciones IP privadas** pueden reutilizarse en distintas redes locales. Por ejemplo, un ordenador de casa y otro del instituto pueden tener la misma dirección IPv4, `192.168.1.20`, porque cada dirección identifica al equipo dentro de su propia red.
+
+Como las direcciones privadas no se enrutan por Internet, el router realiza una **traducción de direcciones de red (NAT)**. En una red SOHO típica, cuando un equipo envía una petición a un servidor de Internet, el router sustituye la **dirección IP privada de origen** por su **dirección IP pública**. Así, el servidor envía la respuesta a la dirección pública del router.
+
+Para que **varios equipos puedan compartir una misma IP pública**, el router utiliza números denominados puerto para identificar cada comunicación y guarda la correspondencia de cada conexión en una tabla. Cuando llega una respuesta, consulta esa tabla y la reenvía al equipo que inició la comunicación.
+#### DNS (*Domain Name Server*)
+
+Cuando escribimos `www.ua.es` en el navegador para visitar la web de la Universidad de Alicante, utilizamos un **nombre de dominio**. Este nombre está formado por varias partes, llamadas _etiquetas_, separadas por puntos. El **sistema de nombres de dominio** (DNS, _Domain Name System_) permite al equipo obtener la dirección IP que necesita para conectarse al servidor web. 
+
+En una red doméstica, lo habitual es utilizar los servidores DNS del proveedor de Internet. También podemos configurar un **servicio DNS público y gratuito**, como Google Public DNS, cuyas direcciones IPv4 son `8.8.8.8` y `8.8.4.4`.
+
+>[!question] A107.2 (CE1) Direccionamiento de equipos
+>1. Configura únicamente los **equipos conectados por cable** en el esquema de red que diseñaste en la actividad A107.1. Asigna a cada uno una **dirección IP distinta** dentro de la red `192.168.X.0/24`, con la máscara de subred `255.255.255.0`. Sustituye `X` por el número del ordenador del aula que estás utilizando y emplea ese mismo valor en todo el esquema.
+>2. Añade la etiqueta `NAT` junto al dispositivo del esquema que realiza la **traducción de direcciones de red**.
+
+### 3.1 DHCP (_Dynamic Host Configuration Protocol_)
+
+Cuando un portátil pasa de la red wifi de casa a la del instituto, puede necesitar una dirección IP, una máscara de subred y una puerta de enlace distintas. El **protocolo de configuración dinámica de equipos (DHCP)** permite obtener estos datos automáticamente, sin tener que introducirlos a mano cada vez que el dispositivo cambia de red.
+
+En este proceso intervienen un **cliente DHCP** y un **servidor DHCP**. Al conectarse a la red, el cliente solicita una configuración. El servidor le asigna una dirección IP durante un tiempo determinado y le proporciona otros datos, como la máscara de subred, la puerta de enlace predeterminada y las direcciones de los servidores DNS.
+
+En una red doméstica o de pequeña oficina (SOHO), el **router** que suministra el proveedor de Internet suele actuar como servidor DHCP. Un punto de acceso wifi que se limita a conectar los dispositivos inalámbricos a la red local permite que estos utilicen el servidor DHCP del router.
+
+| Parámetro del servidor DHCP            | ¿Para qué sirve?                                                                                                                                                                                                                                           |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Dirección IP inicial**               | Indica la primera dirección del rango que el servidor puede asignar.                                                                                                                                                                                       |
+| **Número de direcciones**              | Determina el tamaño del rango. Por ejemplo, si la dirección inicial es `192.168.1.100` y se habilitan 50 direcciones, el rango va de `192.168.1.100` a `192.168.1.149`, ambas incluidas. Algunos routers permiten indicar directamente la dirección final. |
+| **Tiempo de concesión** (_lease time_) | Indica durante cuánto tiempo puede utilizar el cliente la dirección IP asignada. El cliente suele solicitar la renovación antes de que venza la concesión.                                                                                                 |
+| **Reservas por dirección MAC**         | Permiten que un dispositivo concreto, como una impresora, reciba siempre la misma dirección IP mediante DHCP.                                                                                                                                              |
+
+Para evitar **conflictos de direcciones IP**, las direcciones configuradas manualmente en los equipos deben quedar fuera del rango de asignación dinámica o excluirse de él en el servidor DHCP. Por ejemplo, si el router reparte direcciones entre `192.168.1.100` y `192.168.1.149`, se puede configurar una impresora con `192.168.1.20`, siempre que esa dirección pertenezca a la misma subred y esté libre.
+
+>[!question] A107.3 Configuración servidor DHCP
+>1. En el esquema de red de la actividad A107.2, añade la etiqueta `DHCP` debajo de cada dispositivo que obtenga su configuración de red automáticamente.
+>2. Identifica en el esquema el dispositivo que actúa como **servidor DHCP**. Configura el servicio y anota los valores de estos parámetros:
+   > 	- **Dirección IP inicial** del rango de asignación.
+   > 	- **Número de direcciones IP** que puede asignar el servidor.
+   > 	- **Tiempo de concesión** (_lease time_), con su unidad.
+   > 	- **Reservas por dirección MAC**, si las hay. Para cada reserva, indica el dispositivo, su dirección MAC y la dirección IP reservada.
+>
+
+# 4. Router suministrado por el ISP
+
+Los proveedores de servicios de Internet (ISP) suelen proporcionar un enrutador que se conecta a la red del cliente para permitir el acceso a Internet. Este elemento incluye en un único dispositivo las funciones de enrutamiento entre la red local e Internet, las funciones de conmutación (switch) por cable (_eth_) para conectar los dispositivos cableados a la red local, y las funciones de punto de acceso inalámbrico para conectar los dispositivos inalámbricos a la red local.
+
+![[recursos/routerISP.png]]
+
+La **ONT (Optical Network Terminal)**, o terminal de red óptica, es el dispositivo encargado de convertir las señales ópticas que circulan por el cable de fibra óptica en señales eléctricas que pueden ser utilizadas por el router a través de una conexión Ethernet, y viceversa.
+
+Es interesante destacar que lo que habitualmente denominamos _router_ doméstico (SOHO) es, en realidad, un dispositivo que integra las funcionalidades de varios equipos de comunicaciones:
+
+|Componente|Función|
+|---|---|
+|**ONT**|Convierte las señales ópticas en eléctricas y viceversa.|
+|**Router**|Interconecta redes diferentes.|
+|**Switch**|Interconecta dispositivos de la red local mediante Ethernet.|
+|**Punto de acceso WiFi**|Permite la conexión inalámbrica a la red local.|
+
+Además, suele incorporar servicios como DHCP, retransmisión DNS, NAT y cortafuegos.
 
